@@ -1,19 +1,38 @@
-# Musicder
-Download Music For Free.
+<h1 align="center">
+  <br>
+ <a href="https://firebasestorage.googleapis.com/v0/b/webtuhin.appspot.com/o/githubstatic%2Fmdcircle.png?alt=media&token=85f818b0-c353-47ab-ab14-27ac4405fbdd" alt="Musicder" width="300"></a>
+  <br>
+M U S I C D E R 
+</h1>
 
-Readme coming soon
+<br>
+<br>
+### This Project has Two Parts :<br>
+*1. Frontend*<br>
+*2. Backend* <br><br>
+## 1. Backend
+**Brief:**<br>
+*I am using JioSaavn Unofficial API by [Sumanjay](https://github.com/cyberboysumanjay "cyberboysumanjay").*<br>
+**Installation:**<br>
+*Go to [Here](https://github.com/cyberboysumanjay/JioSaavnAPI "Here")*<br><br>
 
-Check the Website:
+## 2. Frontend
+### Brief: <br>
+*Musicder is a Javascript project. It fetch song's details from an API and Serve it.*<br>
+### Deploy:<br>
+
+**You don't need any special server for This Frontend. To Deploy it :** <br>
+
+*i.   Download the Source Code.*<br>
+*ii.  Upload it on Server.*<br>
+*iii.  (Optional) Replace the API Url to Yours in <tt>js/main.js</tt>.*<br><br>
 
 
-https://musicder.tk/
-
-
-Thanks to [cyberboysumanjay](https://github.com/cyberboysumanjay "cyberboysumanjay") For the [API](https://github.com/cyberboysumanjay/JioSaavnAPI "API")
-
+## Credits:
+***Thanks to [Sumanjay](https://github.com/cyberboysumanjay "cyberboysumanjay") for API Backend.***<br>
+***Frontend to [ME](https://github.com/cachecleanerjeet "ME").***
 
 <br><br>
-
 <p align="center"> <b>My Website & Social</b></p>
 <br>
 <p align="center">
