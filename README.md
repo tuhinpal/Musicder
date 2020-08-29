@@ -10,8 +10,8 @@ M U S I C D E R
 <br>
 
 ### This Project has Two Parts :<br>
-*1. Frontend*<br>
-*2. Backend* <br><br>
+*1. Backend*<br>
+*2. Frontend* <br><br>
 ## 1. Backend
 **Brief:**<br>
 *I am using JioSaavn Unofficial API by [Sumanjay](https://github.com/cyberboysumanjay "cyberboysumanjay").*<br>
