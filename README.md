@@ -18,9 +18,9 @@ M U S I C D E R
 *1. Backend*<br>
 *2. Frontend* <br><br>
 ## 1. Backend
-**Brief:**<br>
+### Brief:<br>
 *I am using JioSaavn Unofficial API by [Sumanjay](https://github.com/cyberboysumanjay "cyberboysumanjay").*<br>
-**Installation:**<br>
+### Installation:<br>
 *Go to [Here](https://github.com/cyberboysumanjay/JioSaavnAPI "Here")*<br><br>
 
 ## 2. Frontend
