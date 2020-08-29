@@ -10,9 +10,6 @@ https://musicder.tk/
 
 Thanks to [cyberboysumanjay](https://github.com/cyberboysumanjay "cyberboysumanjay") For the [API](https://github.com/cyberboysumanjay/JioSaavnAPI "API")
 
-&
-
-Thanks to [Parveen Bhadoo](https://github.com/ParveenBhadooOfficial "Parveen Bhadoo") for Inspiration.
 
 <br><br>
 
