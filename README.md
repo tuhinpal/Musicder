@@ -1,7 +1,7 @@
 # Musicder
 Download Music For Free.
 
-Readme will be coming #soon
+Readme will coming soon
 
 Check the Website:
 
