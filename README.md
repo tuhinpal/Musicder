@@ -1,6 +1,6 @@
 <h1 align="center">
 
-  <a href="https://github.com/cachecleanerjeet/Musicder"><img src="https://firebasestorage.googleapis.com/v0/b/webtuhin.appspot.com/o/githubstatic%2Fwhitemusicder.png?alt=media&token=3823b2c9-170c-43e2-bd3d-a176ef85ec46" alt="Wordpress-for-Heroku" width="300"></a>
+  <a href="https://github.com/cachecleanerjeet/Musicder"><img src="https://repository-images.githubusercontent.com/291051734/39ec7780-eab5-11ea-9f0a-d51066507425" alt="Wordpress-for-Heroku" width="300"></a>
 
 
 </h1>
