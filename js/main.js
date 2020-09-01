@@ -42,7 +42,7 @@ if (status == 200) {
     xhr.send();
 };
 
-getJSON('https://api.musicder.tk/result/?query='+ resj,  function(err, data) {
+getJSON('https://api.musicder.tk/?query='+ resj,  function(err, data) {
     
     if (err != null) {
 console.error(err);
