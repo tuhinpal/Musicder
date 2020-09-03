@@ -4,98 +4,121 @@
  */
 
 .heading {
-	color:#00ad5f;
-	font-family:Poppins;
-	font-size:29px;
-	font-weight:bold;
-	text-align:center;
-	padding:12px 20px;
-    transform: translate(0px, 100px);
+	color: #00ad5f;
+	font-family: Poppins;
+	font-size: 29px;
+	font-weight: bold;
+	text-align: center;
+	padding: 12px 20px;
+	transform: translate(0px, 100px);
 }
+
 .headingtwo {
-	color:#00ad5f;
-	font-family:Poppins;
-	font-size:22px;
-	font-weight:bold;
-	text-align:center;
-	padding:10px 15b px;
+	color: #00ad5f;
+	font-family: Poppins;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 15b px;
 }
+
 .parag {
-	color:#00ad5f;
-	font-family:Poppins;
-	font-size:14px;
-	font-weight:bold;
-	text-align:center;
-	padding:0px 10px;
+	color: #00ad5f;
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 10px;
 }
+
 .paragone {
-	color:#ffffff;
-	font-family:Poppins;
-	font-size:15px;
-	font-weight:italic;
-	text-align:center;
-	padding:0px 10px;
+	color: #ffffff;
+	font-family: Poppins;
+	font-size: 15px;
+	font-weight: italic;
+	text-align: center;
+	padding: 0px 10px;
 }
+
 .center {
-	text-align:center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 .dldbtn {
 	box-shadow: 0px 5px 14px -7px #276873;
-	background:linear-gradient(to bottom, #00ad5f 5%, #196470 100%);
-	background-color:#00ad5f;
-	border-radius:10px;
-	display:inline-block;
-    margin-left: auto;
-    margin-right: auto;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Poppins;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #67818a;
+	background: linear-gradient(to bottom, #00ad5f 5%, #196470 100%);
+	background-color: #00ad5f;
+	border-radius: 10px;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 13px 32px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #67818a;
 }
+
 .dldbtn:hover {
-	background:linear-gradient(to bottom, #196470 5%, #00ad5f 100%);
-	background-color:#196470;
+	background: linear-gradient(to bottom, #196470 5%, #00ad5f 100%);
+	background-color: #196470;
 }
+
 .dldbtn:active {
-	position:relative;
-	top:0px;
+	position: relative;
+	top: 0px;
 }
+
 .loading {
-    position: absolute; 
-    margin: auto; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
+
 .footerdiv {
-  background-color: #171616;
+	background-color: #171616;
 }
+
 .firstsong {
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
+
 .secondsong {
-  background-color: #171616;
+	background-color: #171616;
 }
+
 .thirdsong {
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
+
 .fourthsong {
-  background-color: #171616;
+	background-color: #171616;
 }
+
 .fifthsong {
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
+
 .errres {
-  background-color: #171616;
+	background-color: #171616;
 }
+
+.songimage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10%;
+}
+
 
 /**
  * Made by Tuhin Kanti Pal
