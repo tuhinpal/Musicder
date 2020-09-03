@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://musicder.tk">
     <img src="https://firebasestorage.googleapis.com/v0/b/webtuhin.appspot.com/o/githubstatic%2Fmusicdb.png?alt=media&token=1555cd18-ad21-48a6-a5e7-fc492ad27c3a"
-         alt="Download a Song" width="100">>
+         alt="Download a Song" width="200">
  </a>
 
 <br>
