@@ -136,7 +136,6 @@ window.addEventListener('keydown', function (e) {
 }, true);
 document.addEventListener('contextmenu', event => event.preventDefault());
 
-
 /*!
  * Made by Tuhin Kanti Pal
  * Visit https://tu.hin.life
