@@ -3,11 +3,6 @@
  * Visit https://tu.hin.life
  */
 
-function hideF() {
-	document.getElementById("seconds").style.display = "none";
-	document.getElementById("loads").style.display = "none";
-}
-
 function firstF() {
 	var songname = document.getElementById("search").value;
 	var resa = songname.replace(" ", "+");
