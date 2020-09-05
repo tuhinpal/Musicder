@@ -22,6 +22,8 @@
 *1. Backend*<br>
 *2. Frontend* <br><br>
 ## 1. Backend
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcachecleanerjeet%2FMusicder.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcachecleanerjeet%2FMusicder?ref=badge_shield)
+
 ### Brief:<br>
 *I am using JioSaavn Unofficial API by [Sumanjay](https://github.com/cyberboysumanjay "cyberboysumanjay").*<br>
 ### Installation:<br>
@@ -69,3 +71,7 @@
   </a>
   
 </p>
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcachecleanerjeet%2FMusicder.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcachecleanerjeet%2FMusicder?ref=badge_large)
