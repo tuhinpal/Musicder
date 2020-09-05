@@ -6,7 +6,11 @@
 html {
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background: #ffffff;
 }
 
 body {
@@ -14,12 +18,12 @@ body {
 }
 
 .formdivt {
-	min-height: 100vh;
+	min-height: 85vh;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: center;
 	justify-content: center;
-	font-family: Poppins, sans-serif;
+	font-family: Krona One;
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -121,10 +125,11 @@ body {
 	height: 100%;
 	width: 100%;
 	white-space: nowrap;
-	font-size: 16px;
+	font-size: 13px;
 	color: #fff;
 	border: 0;
 	cursor: pointer;
+	font-family: Krona One;
 	position: relative;
 	z-index: 0;
 	background: #00ad5f;
@@ -170,6 +175,7 @@ body {
 		font-size: 13px
 	}
 }
+
 
 /**
  * Made by Tuhin Kanti Pal

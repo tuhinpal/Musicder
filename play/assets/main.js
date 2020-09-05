@@ -5,8 +5,9 @@
 
 let params = new URLSearchParams(location.search);
 var songid = params.get('id');
+
 function lyricsS() {
-	document.getElementById('lyricsdiv').style.display = 'block'; 
+	document.getElementById('lyricsdiv').style.display = 'block';
 	document.getElementById('lyricsinit').style.visibility = 'hidden';
 }
 
@@ -28,7 +29,7 @@ getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid
 	if (err != null) {
 		console.error(err);
 	} else {
-        document.getElementById('content').style.display = 'block';
+		document.getElementById('content').style.display = 'block';
 		document.getElementById('loads').style.display = 'none';
 		var songname = `${data.song}`;
 		var artist = `${data.singers}`;
@@ -41,16 +42,24 @@ getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid
 		document.getElementById("songby").innerHTML = artist;
 		document.getElementById("songplay").innerHTML = "<audio controls><source src='" + audiolink + "' type='audio/mp3' /></audio>";
 		if (rawlyrics == "null") {
-				
-			} else {
-				document.getElementById("lyricsinit").style.visibility = "visible";
-				var lyrics = rawlyrics.replace(/\n/gi, "<br>");
-				document.getElementById("lyrics").innerHTML = lyrics;
-			}
+
+		} else {
+			document.getElementById("lyricsinit").style.visibility = "visible";
+			var lyrics = rawlyrics.replace(/\n/gi, "<br>");
+			document.getElementById("lyrics").innerHTML = lyrics;
+		}
 	}
 });
 
 /*!
  * Made by Tuhin Kanti Pal
  * Visit https://tu.hin.life
+<<<<<<< Updated upstream
  */
+=======
+<<<<<<< HEAD
+ */
+=======
+ */
+>>>>>>> 4eff1e5f15e67ace2b3e80624a56c2f8e653058c
+>>>>>>> Stashed changes
