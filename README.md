@@ -7,6 +7,10 @@
     <img src="https://www.codefactor.io/repository/github/cachecleanerjeet/musicder/badge"
          alt="Codefactor">
   </a>
+    <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fcachecleanerjeet%2FMusicder?ref=badge_shield">
+      <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcachecleanerjeet%2FMusicder.svg?type=shield"
+        alt="Fossa">
+  </a>
 </p>
   </h1>
 <p align="center">
