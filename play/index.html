@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="author" content="Tuhin Kanti Pal">
+      <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet" />
+      <link href="assets/style.css" rel="stylesheet" />
+   </head>
+   <body onload="document.getElementById('lyricsdiv').style.display = 'none'; document.getElementById('content').style.display = 'none'; document.getElementById('loads').style.display = 'block'; document.getElementById('lyricsinit').style.visibility = 'hidden';">
+      <div id="content" class="content">
+         <br><br>
+         <img id="songimage" class="image" width="75%"/>
+         <h1 id="songname" class="songname"></h1>
+         <p id="songby" class="songby"></p>
+         <p id="songplay" class="song"></p>
+		<div onclick="lyricsS();" id="lyricsinit" class="lyricsinit">
+            <p class="lyricsask">
+               Lyrics
+            </p>
+         </div> 
+		 <br>
+      </div>
+      <br><br>
+	  <div class="lyricsdiv" id="lyricsdiv">
+	    <p class="lyricsheading">
+		Lyrics
+		</p>
+	    <p id="lyrics" class="lyrics"></p>
+		<br><br>
+	  </div>
+	   <div id="loads">
+         <img id="image" src="../img/loading.gif" class="loading" width="150" height="150">
+      </div>
+   </body>
+   <script src="assets/main.js"></script>
+</html>
+<!Made by Tuhin. Send Mail to me[at]mailtuhin[dot]ml for contact.>

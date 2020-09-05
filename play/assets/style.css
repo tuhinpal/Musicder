@@ -1,0 +1,129 @@
+/**
+ * Made by Tuhin Kanti Pal
+ * Visit https://tu.hin.life
+ */
+
+body {
+	-youbkit-touch-callout: none;
+	-youbkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background: #ffffff;
+}
+
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+	width: 340px;
+	background: #00AD5F;
+	border-radius: 10px;
+}
+
+.lyricsdiv {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	width: 340px;
+	background: #00AD5F;
+	border-radius: 10px;
+}
+
+.image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10%;
+}
+
+.songname {
+	color: #1C1C1C;
+	font-family: Krona One;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-bottom: 1px;
+	padding-left: 20px;
+}
+
+.songby {
+	color: #1C1C1C;
+	font-family: Krona One;
+	font-size: 8px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+.song {
+	background: #00AD5F;
+	text-align: center;
+	padding-top: 10px;
+	padding-right: 20px;
+	font-family: Krona One;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+.lyricsinit {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 70px;
+	height: 25px;
+	background: #02d174;
+	border-radius: 25px;
+}
+
+.lyricsask {
+	text-align: center;
+	font-size: 10px;
+	color: #ffffff;
+	font-family: Krona One;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	transform: translate(0px, 7px);
+}
+
+.lyrics {
+	color: #ffffff;
+	font-family: Krona One;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+.lyricsheading {
+	color: #ffffff;
+	font-family: Krona One;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 25px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+
+.loading {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/**
+ * Made by Tuhin Kanti Pal
+ * Visit https://tu.hin.life
+ */

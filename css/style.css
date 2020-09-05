@@ -47,7 +47,7 @@
 	margin-right: auto;
 }
 
-.dldbtn {
+.activityb {
 	box-shadow: 0px 5px 14px -7px #276873;
 	background: linear-gradient(to bottom, #00ad5f 5%, #196470 100%);
 	background-color: #00ad5f;
@@ -60,17 +60,17 @@
 	font-family: Poppins;
 	font-size: 20px;
 	font-weight: bold;
-	padding: 13px 32px;
+	padding: 13px 15px;
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #67818a;
 }
 
-.dldbtn:hover {
+.activityb:hover {
 	background: linear-gradient(to bottom, #196470 5%, #00ad5f 100%);
 	background-color: #196470;
 }
 
-.dldbtn:active {
+.activityb:active {
 	position: relative;
 	top: 0px;
 }
