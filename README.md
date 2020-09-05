@@ -22,6 +22,14 @@
 <br>
 <br> <br> 
 
+### Features :<br>
+*1. Free*<br>
+*2. Fast* <br>
+*3. Easy to Use*<br>
+*4. Streaming suppor with Lyrics* <br>
+*5. One click Download*<br><br>
+
+
 ### This Project has Two Parts :<br>
 *1. Backend*<br>
 *2. Frontend* <br><br>
