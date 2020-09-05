@@ -66,7 +66,8 @@ function firstF() {
 				var artistone = `${data[0].singers}`;
 				document.getElementById("tu").innerHTML = "<h1 class='headingtwo'>" + songnameone + "</h1><br><p class='parag'>" + artistone + "</p><br><p class='parag'> Album : " + albumone + "</p>";
 				document.getElementById("imageone").src = imageone;
-				document.getElementById("dldone").action = linkone;
+				document.getElementById("dldone").href = linkone;
+				document.getElementById("dldone").download = songnameone + ".mp3";
 			}
 
 
@@ -80,7 +81,8 @@ function firstF() {
 				var artisttwo = `${data[1].singers}`;
 				document.getElementById("hin").innerHTML = "<h1 class='headingtwo'>" + songnametwo + "</h1><br><p class='parag'>" + artisttwo + "</p><br><p class='parag'> Album : " + albumtwo + "</p>";
 				document.getElementById("imagetwo").src = imagetwo;
-				document.getElementById("dldtwo").action = linktwo;
+				document.getElementById("dldtwo").href = linktwo;
+				document.getElementById("dldtwo").download = songnametwo + ".mp3";
 			}
 
 
@@ -94,7 +96,8 @@ function firstF() {
 				var artistthree = `${data[2].singers}`;
 				document.getElementById("life").innerHTML = "<h1 class='headingtwo'>" + songnamethree + "</h1><br><p class='parag'>" + artistthree + "</p><br><p class='parag'> Album : " + albumthree + "</p>";
 				document.getElementById("imagethree").src = imagethree;
-				document.getElementById("dldthree").action = linkthree;
+				document.getElementById("dldthree").href = linkthree;
+				document.getElementById("dldthree").download = songnamethree + ".mp3";
 			}
 
 
@@ -108,7 +111,8 @@ function firstF() {
 				var artistfour = `${data[3].singers}`;
 				document.getElementById("iamtuhin").innerHTML = "<h1 class='headingtwo'>" + songnamefour + "</h1><br><p class='parag'>" + artistfour + "</p><br><p class='parag'> Album : " + albumfour + "</p>";
 				document.getElementById("imagefour").src = imagefour;
-				document.getElementById("dldfour").action = linkfour;
+				document.getElementById("dldfour").href = linkfour;
+				document.getElementById("dldfour").download = songnamefour + ".mp3";
 			}
 
 			if (tempfive === "undefined") {
@@ -121,7 +125,8 @@ function firstF() {
 				var artistfive = `${data[4].singers}`;
 				document.getElementById("ga").innerHTML = "<h1 class='headingtwo'>" + songnamefive + "</h1><br><p class='parag'>" + artistfive + "</p><br><p class='parag'> Album : " + albumfive + "</p>";
 				document.getElementById("imagefive").src = imagefive;
-				document.getElementById("dldfive").action = linkfive;
+				document.getElementById("dldfive").href = linkfive;
+				document.getElementById("dldfive").download = songnamefive + ".mp3";
 			}
 		}
 	});
