@@ -1,3 +1,8 @@
+/*!
+ * Made by Tuhin Kanti Pal
+ * Visit https://tu.hin.life
+ */
+
 let params = new URLSearchParams(location.search);
 var songid = params.get('id');
 function lyricsS() {
@@ -44,3 +49,8 @@ getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid
 			}
 	}
 });
+
+/*!
+ * Made by Tuhin Kanti Pal
+ * Visit https://tu.hin.life
+ */
