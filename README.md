@@ -1,15 +1,14 @@
 <h1 align="center">
 
   <a href="https://github.com/cachecleanerjeet/Musicder"><img src="https://repository-images.githubusercontent.com/291051734/39ec7780-eab5-11ea-9f0a-d51066507425" alt="Wordpress-for-Heroku" width="400"></a>
-  </h1>
-  
-<p align="center">
+ <br><br>
+<p>
   <a href="https://www.codefactor.io/repository/github/cachecleanerjeet/musicder">
     <img src="https://www.codefactor.io/repository/github/cachecleanerjeet/musicder/badge"
          alt="Codefactor">
   </a>
 </p>
-
+  </h1>
 <p align="center">
   <a href="https://musicder.tk">
     <img src="https://firebasestorage.googleapis.com/v0/b/webtuhin.appspot.com/o/githubstatic%2Fmusicdb.png?alt=media&token=1555cd18-ad21-48a6-a5e7-fc492ad27c3a"
