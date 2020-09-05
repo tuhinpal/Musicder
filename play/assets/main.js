@@ -54,12 +54,4 @@ getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid
 /*!
  * Made by Tuhin Kanti Pal
  * Visit https://tu.hin.life
-<<<<<<< Updated upstream
  */
-=======
-<<<<<<< HEAD
- */
-=======
- */
->>>>>>> 4eff1e5f15e67ace2b3e80624a56c2f8e653058c
->>>>>>> Stashed changes
