@@ -15,7 +15,7 @@
   </h1>
 <p align="center">
   <a href="https://musicder.tk">
-    <img src="https://firebasestorage.googleapis.com/v0/b/webtuhin.appspot.com/o/githubstatic%2Fmusicdb.png?alt=media&token=1555cd18-ad21-48a6-a5e7-fc492ad27c3a"
+    <img src="https://img.shields.io/badge/Download--A--Song--Now-green?logo=copy&style=for-the-badge"
          alt="Download a Song" width="200">
  </a>
 
