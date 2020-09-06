@@ -11,11 +11,11 @@ document.getElementById("songname").innerHTML = "Download " + name;
 document.title = "Download  " + name;
 
 //96 kbps replace
-var ninesix = lnk.replace("320", "96") ;
+var ninesix = lnk.replace("_320", "_96") ;
 document.getElementById("qone").href = ninesix ;
 
 //128 kbps replace
-var onetwoeight = lnk.replace("320", "160") ;
+var onetwoeight = lnk.replace("_320", "_160") ;
 document.getElementById("qtwo").href = onetwoeight ;
 
 //320 kbps
