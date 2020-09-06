@@ -47,7 +47,7 @@ getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid
 
 		} else {
 			document.getElementById("lyricsinit").style.visibility = "visible";
-			var lyrics = rawlyrics;
+			var lyrics = rawlyrics.replace(/\n/gi, "<br>");
 			document.getElementById("lyrics").innerHTML = lyrics;
 		}
 	}
