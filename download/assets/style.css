@@ -1,0 +1,82 @@
+/**
+ * Made by Tuhin Kanti Pal
+ * Visit https://tu.hin.life
+ */
+
+.heading {
+	color: #00ad5f;
+	font-family: Krona One;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	padding: 12px 20px;
+	transform: translate(0px, 25px);
+}
+
+.logodiv {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 450px;
+	width: 150px;
+	height: 50px;
+	background: #ffffff;
+	border-radius: 0px;
+}
+
+.logo {
+	color: #00ad5f;
+	font-family: 'Bitter', serif;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	transform: translate(0px, 12px);
+}
+
+.quality {
+	color: #00ad5f;
+	font-family: Krona One;
+	font-size: 12px;
+	text-align: center;
+	padding: 12px 20px;
+}
+
+.center {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.activityb {
+	box-shadow: 0px 5px 14px -7px #276873;
+	background: linear-gradient(to bottom, #00ad5f 5%, #196470 100%);
+	background-color: #00ad5f;
+	border-radius: 10px;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Krona One;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 13px 15px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #67818a;
+}
+
+.activityb:hover {
+	background: linear-gradient(to bottom, #196470 5%, #00ad5f 100%);
+	background-color: #196470;
+}
+
+.activityb:active {
+	position: relative;
+	top: 0px;
+}
+
+
+/**
+ * Made by Tuhin Kanti Pal
+ * Visit https://tu.hin.life
+ */
