@@ -25,7 +25,7 @@ var getJSON = function (url, callback) {
 	};
 	xhr.send();
 };
-getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid, function (err, data) {
+getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid + '&lyrics=true', function (err, data) {
 	if (err != null) {
 		console.error(err);
 	} else {
@@ -46,7 +46,7 @@ getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid
 
 		} else {
 			document.getElementById("lyricsinit").style.visibility = "visible";
-			var lyrics = rawlyrics.replace(/\n/gi, "<br>");
+			var lyrics = rawlyrics;
 			document.getElementById("lyrics").innerHTML = lyrics;
 		}
 	}
