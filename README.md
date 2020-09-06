@@ -27,7 +27,10 @@
 *2. Fast* <br>
 *3. Easy to Use*<br>
 *4. Streaming support with Lyrics* <br>
-*5. One click Download*<br><br>
+*5. One click Download*<br>
+*6. Supported multiple quality (320 & 128 & 96) for download*<br>
+<br>
+
 
 
 ### This Project has Two Parts :<br>
