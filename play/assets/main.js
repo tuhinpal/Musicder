@@ -30,6 +30,7 @@ getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid
 		console.error(err);
 	} else {
 		document.getElementById('content').style.display = 'block';
+		document.getElementById('footer').style.display = 'block';
 		document.getElementById('loads').style.display = 'none';
 		var songname = `${data.song}`;
 		var artist = `${data.singers}`;
