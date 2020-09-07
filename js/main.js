@@ -69,7 +69,7 @@ function firstF() {
 				document.getElementById("tu").innerHTML = "<h1 class='headingtwo'>" + songnameone + "</h1><br><p class='parag'>" + artistone + "</p><br><p class='parag'> Album : " + albumone + "</p>";
 				document.getElementById("imageone").src = imageone;
 				document.getElementById("dldone").href = "download/?n=" + songnameone + "&link=" + linkone;
-				document.getElementById("playone").href = "play/?id=" + playone;
+				document.getElementById("playone").href = "play/?id=" + playone + "&n=" + songnameone;
 			}
 
 
@@ -86,7 +86,7 @@ function firstF() {
 				document.getElementById("hin").innerHTML = "<h1 class='headingtwo'>" + songnametwo + "</h1><br><p class='parag'>" + artisttwo + "</p><br><p class='parag'> Album : " + albumtwo + "</p>";
 				document.getElementById("imagetwo").src = imagetwo;
 				document.getElementById("dldtwo").href = "download/?n=" + songnametwo + "&link=" + linktwo;
-				document.getElementById("playtwo").href = "play/?id=" + playtwo;
+				document.getElementById("playtwo").href = "play/?id=" + playtwo + "&n=" + songnametwo;
 			}
 
 
@@ -103,7 +103,7 @@ function firstF() {
 				document.getElementById("life").innerHTML = "<h1 class='headingtwo'>" + songnamethree + "</h1><br><p class='parag'>" + artistthree + "</p><br><p class='parag'> Album : " + albumthree + "</p>";
 				document.getElementById("imagethree").src = imagethree;
 				document.getElementById("dldthree").href = "download/?n=" + songnamethree + "&link=" + linkthree;
-				document.getElementById("playthree").href = "play/?id=" + playthree;
+				document.getElementById("playthree").href = "play/?id=" + playthree + "&n=" + songnamethree;
 			}
 
 
@@ -120,7 +120,7 @@ function firstF() {
 				document.getElementById("iamtuhin").innerHTML = "<h1 class='headingtwo'>" + songnamefour + "</h1><br><p class='parag'>" + artistfour + "</p><br><p class='parag'> Album : " + albumfour + "</p>";
 				document.getElementById("imagefour").src = imagefour;
 				document.getElementById("dldfour").href = "download/?n=" + songnamefour + "&link=" + linkfour;
-				document.getElementById("playfour").href = "play/?id=" + playfour;
+				document.getElementById("playfour").href = "play/?id=" + playfour + "&n=" + songnamefour;
 			}
 
 			if (tempfive === "undefined") {
@@ -136,7 +136,7 @@ function firstF() {
 				document.getElementById("ga").innerHTML = "<h1 class='headingtwo'>" + songnamefive + "</h1><br><p class='parag'>" + artistfive + "</p><br><p class='parag'> Album : " + albumfive + "</p>";
 				document.getElementById("imagefive").src = imagefive;
 				document.getElementById("dldfive").href = "download/?n=" + songnamefive + "&link=" + linkfive;
-				document.getElementById("playfive").href = "play/?id=" + playfive;
+				document.getElementById("playfive").href = "play/?id=" + playfive + "&n=" + songnamefive;
 			}
 		}
 	});

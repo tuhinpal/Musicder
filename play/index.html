@@ -5,12 +5,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="author" content="Tuhin Kanti Pal">
-      <link href="https://fonts.googleapis.com/css?family=Krona+One|Catamaran" rel="stylesheet" />
-	  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Krona+One|Catamaran|Poppins" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@900&display=swap" rel="stylesheet">
       <link rel="shortcut icon" href="../img/favicon.png">
       <link href="assets/style.css" rel="stylesheet" />
    </head>
-   <body onload="document.getElementById('lyricsdiv').style.display = 'none'; document.getElementById('footer').style.display = 'none'; document.getElementById('content').style.display = 'none'; document.getElementById('loads').style.display = 'block'; document.getElementById('lyricsinit').style.visibility = 'hidden';">
+   <body onload="document.getElementById('lyricsdiv').style.display = 'none'; document.getElementById('matha').style.display = 'none'; document.getElementById('footer').style.display = 'none'; document.getElementById('content').style.display = 'none'; document.getElementById('loads').style.display = 'block'; document.getElementById('lyricsinit').style.visibility = 'hidden';">
+      <div id="matha" class="head">
+         <h1 class="headplay">Play</h1>
+         <img src="assets/share.svg" onclick="share();" class="sharebtn" width="30" height="30"/>
+      </div>
       <div id="content" class="content">
          <br><br>
          <img id="songimage" class="image" width="75%"/>
@@ -34,12 +38,12 @@
       <div id="loads">
          <img id="image" src="../img/loading.gif" class="loading" width="150" height="150">
       </div>
-	  <div id="footer" class="footer">
-	     <h1 onclick="window.location.href='https://musicder.tk/';" class="logo">MUSICDER</h1>
-		 <br>
+      <div id="footer" class="footer">
+         <h1 onclick="window.location.href='https://musicder.tk/';" class="logo">MUSICDER</h1>
+         <br>
          <p class="paragone" onclick="window.location.href='https://tu.hin.life';">An Open Source Project by Tuhin</p>
          <img class="center" onclick="window.location.href='https://github.com/cachecleanerjeet/Musicder';" src="assets/github.svg" width="30" height="30">
-	  </div>
+      </div>
    </body>
    <script src="assets/main.js"></script>
 </html>

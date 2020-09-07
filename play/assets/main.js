@@ -5,6 +5,7 @@
 
 let params = new URLSearchParams(location.search);
 var songid = params.get('id');
+var sharename = params.get('n');
 
 function lyricsS() {
 	document.getElementById('lyricsdiv').style.display = 'block';
@@ -31,6 +32,7 @@ getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid
 	} else {
 		document.getElementById('content').style.display = 'block';
 		document.getElementById('footer').style.display = 'block';
+		document.getElementById('matha').style.display = 'block';
 		document.getElementById('loads').style.display = 'none';
 		var songname = `${data.song}`;
 		var artist = `${data.singers}`;
@@ -87,6 +89,23 @@ getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid
 		}
 	}
 });
+
+function share() {
+	if (navigator.share) {
+		navigator.share({
+				title: 'Share | Musicder',
+				text: "Listen " + sharename + " on Musicder." + "\n\n👉",
+				url: window.location.href
+			}).then(() => {
+				console.log('Thanks for sharing!');
+			})
+			.catch(err => {
+				console.log(`Couldn't share because of`, err.message);
+			});
+	} else {
+		console.log('web share not supported');
+	}
+}
 
 /*!
  * Made by Tuhin Kanti Pal

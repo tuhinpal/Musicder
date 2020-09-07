@@ -15,7 +15,7 @@ body {
 .content {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 75px;
+	margin-top: 12px;
 	width: 340px;
 	background: #00AD5F;
 	border-radius: 12px;
@@ -35,6 +35,16 @@ body {
 	margin-right: auto;
 	margin-top: 50px;
 	width: 340px;
+	background: #ffffff;
+	border-radius: 0px;
+}
+
+.head {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 340px;
+	height: 40px;
 	background: #ffffff;
 	border-radius: 0px;
 }
@@ -160,6 +170,20 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.headplay {
+	color: #1C1C1C;
+	font-family: Poppins;
+	font-size: 30px;
+	text-align: left;
+	padding: 0px 0px;
+	font-weight: bold;
+}
+
+.sharebtn {
+	transform: translate(310px, -55px);
+}
+
 
 /**
  * Made by Tuhin Kanti Pal
