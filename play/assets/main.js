@@ -25,7 +25,7 @@ var getJSON = function (url, callback) {
 	};
 	xhr.send();
 };
-getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid + '&lyrics=true', function (err, data) {
+getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid, function (err, data) {
 	if (err != null) {
 		console.error(err);
 	} else {
@@ -36,19 +36,54 @@ getJSON('https://api.musicder.tk/?query=https://www.jiosaavn.com/song/' + songid
 		var artist = `${data.singers}`;
 		var songimage = `${data.image}`;
 		var audiolinkhq = `${data.media_url}`;
-		var audiolink = audiolinkhq.replace("_320", "_160") ;
-		var rawlyrics = `${data.lyrics}`;
+		var audiolink = audiolinkhq.replace("_320", "_96");
+		var has_lyrics = `${data.has_lyrics}`;
 		document.title = "Playing " + songname;
 		document.getElementById("songname").innerHTML = songname;
 		document.getElementById("songimage").src = songimage;
 		document.getElementById("songby").innerHTML = artist;
 		document.getElementById("songplay").innerHTML = "<audio controls><source src='" + audiolink + "' type='audio/mp3' /></audio>";
-		if (rawlyrics == "null") {
+		if (has_lyrics == "true") {
+			document.getElementById("lyricsinit").style.visibility = "visible";
+			var lyricsid = `${data.id}`;
+
+			//lyrics
+
+			var lyricsinit = function (url, callback) {
+
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', url, true);
+				xhr.responseType = 'json';
+
+				xhr.onload = function () {
+
+					var status = xhr.status;
+
+					if (status == 200) {
+						callback(null, xhr.response);
+					} else {
+						callback(status);
+					}
+				};
+
+				xhr.send();
+			};
+
+			lyricsinit('https://lyrics.musicder.tk/?lyrics_id=' + lyricsid, function (err, getlyrics) {
+
+				if (err != null) {
+					console.error(err);
+				} else {
+
+					var lyrics = `${getlyrics.lyrics}`;
+					document.getElementById("lyrics").innerHTML = lyrics;
+				}
+			});
+
 
 		} else {
-			document.getElementById("lyricsinit").style.visibility = "visible";
-			var lyrics = rawlyrics.replace(/\n/gi, "<br>");
-			document.getElementById("lyrics").innerHTML = lyrics;
+
+
 		}
 	}
 });
