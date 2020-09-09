@@ -70,9 +70,6 @@ function firstF() {
 				document.getElementById("imageone").src = imageone;
 				document.getElementById("dldone").href = "download/?n=" + songnameone + "&link=" + linkone;
 				document.getElementById("playone").href = "play/?id=" + playone + "&n=" + songnameone;
-				
-				//play section hidden due to some api errors available after fix the api error
-				document.getElementById("playone").style.display = "none";
 			}
 
 
@@ -90,9 +87,6 @@ function firstF() {
 				document.getElementById("imagetwo").src = imagetwo;
 				document.getElementById("dldtwo").href = "download/?n=" + songnametwo + "&link=" + linktwo;
 				document.getElementById("playtwo").href = "play/?id=" + playtwo + "&n=" + songnametwo;
-				
-				//play section hidden due to some api errors available after fix the api error
-				document.getElementById("playtwo").style.display = "none";
 			}
 
 
@@ -110,9 +104,6 @@ function firstF() {
 				document.getElementById("imagethree").src = imagethree;
 				document.getElementById("dldthree").href = "download/?n=" + songnamethree + "&link=" + linkthree;
 				document.getElementById("playthree").href = "play/?id=" + playthree + "&n=" + songnamethree;
-				
-				//play section hidden due to some api errors available after fix the api error
-				document.getElementById("playthree").style.display = "none";
 			}
 
 
@@ -130,9 +121,6 @@ function firstF() {
 				document.getElementById("imagefour").src = imagefour;
 				document.getElementById("dldfour").href = "download/?n=" + songnamefour + "&link=" + linkfour;
 				document.getElementById("playfour").href = "play/?id=" + playfour + "&n=" + songnamefour;
-				
-				//play section hidden due to some api errors available after fix the api error
-				document.getElementById("playfour").style.display = "none";
 			}
 
 			if (tempfive === "undefined") {
@@ -149,9 +137,6 @@ function firstF() {
 				document.getElementById("imagefive").src = imagefive;
 				document.getElementById("dldfive").href = "download/?n=" + songnamefive + "&link=" + linkfive;
 				document.getElementById("playfive").href = "play/?id=" + playfive + "&n=" + songnamefive;
-				
-				//play section hidden due to some api errors available after fix the api error
-				document.getElementById("playfive").style.display = "none";
 			}
 		}
 	});
