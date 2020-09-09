@@ -41,7 +41,7 @@
 *I am using JioSaavn Unofficial API by [Sumanjay](https://github.com/cyberboysumanjay "cyberboysumanjay") to search songs & and using Jiosaavn Original APIs to Stream Songs / Show lyrics, However this API (Original Jiosaavn API) is proxied with Cloudflare workers.*<br>
 ### Installation:<br>
 *1. Go to [Here](https://github.com/cyberboysumanjay/JioSaavnAPI "Here") for Installation of Jiosaavn Unofficial API*<br>
-*2. No need to change Jiosaavn proxied APIs*<br><br> 
+*2. No need to install Jiosaavn proxied APIs*<br><br> 
 
 ## 2. Frontend
 ### Brief: <br>
@@ -53,7 +53,7 @@
 *i.   Download the Source Code.*<br>
 *ii.  Upload it on Server.*<br>
 *iii.  (Optional) Replace the API Url to Yours in <tt>js/main.js</tt>.*<br>
-*iv. No need to change Jiosaavn proxied APIs*<br><br>
+*iv. No need to change Jiosaavn proxied API urls*<br><br>
 
 
 ## Credits:
