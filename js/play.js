@@ -1,6 +1,6 @@
 /*!
  * Made by Musicder Kanti Pal
- * This Play Section is Not using Jiosaavn Unofficial API by Sumanjay anymore
+ * This Section is Not using Jiosaavn Unofficial API by Sumanjay 
  * Visit https://tu.hin.life
  */
 
@@ -71,5 +71,5 @@ function share() {
 /*!
  * Made by Musicder Kanti Pal
  * Visit https://tu.hin.life
- * This Play Section is Not using Jiosaavn Unofficial API by Sumanjay anymore
+ * This Section is Not using Jiosaavn Unofficial API by Sumanjay
  */
