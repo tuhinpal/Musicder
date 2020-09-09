@@ -1,6 +1,6 @@
 /*!
- * Made by Musicder Kanti Pal
- * This Section is Not using Jiosaavn Unofficial API by Sumanjay 
+ * Made by Tuhin Kanti Pal
+ * This Section is Not using Jiosaavn Unofficial API by Sumanjay anymore
  * Visit https://tu.hin.life
  */
 
@@ -69,7 +69,7 @@ function share() {
 }
 
 /*!
- * Made by Musicder Kanti Pal
+ * Made by Tuhin Kanti Pal
  * Visit https://tu.hin.life
- * This Section is Not using Jiosaavn Unofficial API by Sumanjay
+ * This Section is Not using Jiosaavn Unofficial API by Sumanjay anymore
  */
