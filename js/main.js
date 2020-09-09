@@ -64,8 +64,8 @@ function firstF() {
 				var imageone = `${data[0].image}`;
 				var linkone = `${data[0].media_url}`;
 				var artistone = `${data[0].singers}`;
-				var perma_one = `${data[0].perma_url}`;
-				var playone = perma_one.replace("https://www.jiosaavn.com/song/", "");
+				var id_one = `${data[0].id}`;
+				var playone = id_one;
 				document.getElementById("tu").innerHTML = "<h1 class='headingtwo'>" + songnameone + "</h1><br><p class='parag'>" + artistone + "</p><br><p class='parag'> Album : " + albumone + "</p>";
 				document.getElementById("imageone").src = imageone;
 				document.getElementById("dldone").href = "download/?n=" + songnameone + "&link=" + linkone;
@@ -81,8 +81,8 @@ function firstF() {
 				var imagetwo = `${data[1].image}`;
 				var linktwo = `${data[1].media_url}`;
 				var artisttwo = `${data[1].singers}`;
-				var perma_two = `${data[1].perma_url}`;
-				var playtwo = perma_two.replace("https://www.jiosaavn.com/song/", "");
+				var id_two = `${data[1].id}`;
+				var playtwo = id_two;
 				document.getElementById("hin").innerHTML = "<h1 class='headingtwo'>" + songnametwo + "</h1><br><p class='parag'>" + artisttwo + "</p><br><p class='parag'> Album : " + albumtwo + "</p>";
 				document.getElementById("imagetwo").src = imagetwo;
 				document.getElementById("dldtwo").href = "download/?n=" + songnametwo + "&link=" + linktwo;
@@ -98,8 +98,8 @@ function firstF() {
 				var imagethree = `${data[2].image}`;
 				var linkthree = `${data[2].media_url}`;
 				var artistthree = `${data[2].singers}`;
-				var perma_three = `${data[2].perma_url}`;
-				var playthree = perma_three.replace("https://www.jiosaavn.com/song/", "");
+				var id_three = `${data[2].id}`;
+				var playthree = id_three;
 				document.getElementById("life").innerHTML = "<h1 class='headingtwo'>" + songnamethree + "</h1><br><p class='parag'>" + artistthree + "</p><br><p class='parag'> Album : " + albumthree + "</p>";
 				document.getElementById("imagethree").src = imagethree;
 				document.getElementById("dldthree").href = "download/?n=" + songnamethree + "&link=" + linkthree;
@@ -115,8 +115,8 @@ function firstF() {
 				var imagefour = `${data[3].image}`;
 				var linkfour = `${data[3].media_url}`;
 				var artistfour = `${data[3].singers}`;
-				var perma_four = `${data[3].perma_url}`;
-				var playfour = perma_four.replace("https://www.jiosaavn.com/song/", "");
+				var id_four = `${data[3].id}`;
+				var playfour = id_four;
 				document.getElementById("iamtuhin").innerHTML = "<h1 class='headingtwo'>" + songnamefour + "</h1><br><p class='parag'>" + artistfour + "</p><br><p class='parag'> Album : " + albumfour + "</p>";
 				document.getElementById("imagefour").src = imagefour;
 				document.getElementById("dldfour").href = "download/?n=" + songnamefour + "&link=" + linkfour;
@@ -131,8 +131,8 @@ function firstF() {
 				var imagefive = `${data[4].image}`;
 				var linkfive = `${data[4].media_url}`;
 				var artistfive = `${data[4].singers}`;
-				var perma_five = `${data[4].perma_url}`;
-				var playfive = perma_five.replace("https://www.jiosaavn.com/song/", "");
+				var id_five = `${data[4].id}`;
+				var playfive = id_five;
 				document.getElementById("ga").innerHTML = "<h1 class='headingtwo'>" + songnamefive + "</h1><br><p class='parag'>" + artistfive + "</p><br><p class='parag'> Album : " + albumfive + "</p>";
 				document.getElementById("imagefive").src = imagefive;
 				document.getElementById("dldfive").href = "download/?n=" + songnamefive + "&link=" + linkfive;
