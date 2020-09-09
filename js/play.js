@@ -55,7 +55,7 @@ function share() {
 	if (navigator.share) {
 		navigator.share({
 				title: 'Share | Musicder',
-				text: "Listen " + songname + " on Musicder." + "\n\n👉",
+				text: "Listen " + sharename + " on Musicder." + "\n\n👉",
 				url: window.location.href
 			}).then(() => {
 				console.log('Thanks for sharing!');
