@@ -38,10 +38,9 @@
 *2. Frontend.* <br><br>
 ## 1. Backend
 ### Brief:<br>
-*I am using JioSaavn Unofficial API by [Sumanjay](https://github.com/cyberboysumanjay "cyberboysumanjay") to search songs & and using Jiosaavn Original APIs to Stream Songs / Show lyrics, However this API (Original Jiosaavn API) is proxied with Cloudflare workers.*<br>
+*I am using JioSaavn Original APIs to Search Songs, Stream Songs, Download Songs & Show lyrics, However these APIs (Original Jiosaavn API) is proxied with Cloudflare workers.*<br>
 ### Installation:<br>
-*1. Go to [Here](https://github.com/cyberboysumanjay/JioSaavnAPI "Here") for Installation of Jiosaavn Unofficial API.*<br>
-*2. No need to install Jiosaavn proxied APIs.*<br><br> 
+*Go to [Here](https://github.com/cachecleanerjeet/Musicder/tree/backend "Here") for Setup Cloudflare Proxy to disable CORS Verification.*<br><br> 
 
 ## 2. Frontend
 ### Brief: <br>
@@ -52,14 +51,12 @@
 
 *i.   Download the Source Code.*<br>
 *ii.  Upload it on Server.*<br>
-*iii.  (Optional) Replace the API Url to Yours in <tt>js/main.js</tt>.*<br>
-*iv. No need to change Jiosaavn proxied API urls.*<br><br>
+*iii.  (Optional) Replace API Urls to Yours in <tt>js/main.js</tt> & <tt>js/play.js</tt> & <tt>js/download.js</tt>.*<br><br>
 
 
-## Credits:
-***Thanks to [Sumanjay](https://github.com/cyberboysumanjay "cyberboysumanjay") for search API Backend.***<br>
-***[Jiosaavn](https://jiosaavn.com "Jiosaavn").***<br>
-***[Tuhin](https://github.com/cachecleanerjeet "ME").***
+## Changelog:
+*Due to frequent api error of [Sumanjay's Jiosaavn Unofficial API](https://github.com/cyberboysumanjay/JioSaavnAPI "Sumanjay's Jiosaavn Unofficial API"), I decided to move on and use Jiosaavn's Original API, However these are proxied with Cloudflare Workers to disable CORS Verification.*
+
 
 <br><br>
 <p align="center"> <b>My Website & Social</b></p>
