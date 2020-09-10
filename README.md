@@ -38,7 +38,7 @@
 *2. Frontend.* <br><br>
 ## 1. Backend
 ### Brief:<br>
-*I am using JioSaavn Original APIs to Search Songs, Stream Songs, Download Songs & Show lyrics, However these APIs (Original Jiosaavn API) is proxied with Cloudflare workers.*<br>
+*I am using JioSaavn's Original API to Search Songs, Stream Songs, Download Songs & Show lyrics, However these APIs (Original Jiosaavn API) is proxied with Cloudflare workers.*<br>
 ### Installation:<br>
 *Go to [Here](https://github.com/cachecleanerjeet/Musicder/tree/backend "Here") for Setup Cloudflare Proxy to disable CORS Verification.*<br><br> 
 
