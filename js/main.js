@@ -1,20 +1,12 @@
 /*!
  * Made by Tuhin Kanti Pal
+ * No More using Jiosaavn API by Sumanjay, Musicder is now fetch every Details from jiosaavn.com (Proxied using cloudflare worker)
  * Visit https://tu.hin.life
  */
 
 function firstF() {
 	var songname = document.getElementById("search").value;
-	var resa = songname.replace(" ", "+");
-	var resb = resa.replace(" ", "+");
-	var resc = resb.replace(" ", "+");
-	var resd = resc.replace(" ", "+");
-	var rese = resd.replace(" ", "+");
-	var resf = rese.replace(" ", "+");
-	var resg = resf.replace(" ", "+");
-	var resh = resg.replace(" ", "+");
-	var resi = resh.replace(" ", "+");
-	var resj = resi.replace(" ", "+");
+	var snformat = songname.replace(/ /g, "+");
 	document.getElementById("firsts").style.display = "none";
 	document.getElementById("footer").style.display = "none";
 	document.getElementById("loads").style.display = "block";
@@ -38,7 +30,7 @@ function firstF() {
 		xhr.send();
 	};
 
-	getJSON('https://api.musicder.tk/?query=' + resj, function (err, data) {
+	getJSON('https://searchapi.musicder.tk/?query=' + snformat, function (err, data) {
 
 		if (err != null) {
 			console.error(err);
@@ -47,11 +39,11 @@ function firstF() {
 			document.getElementById("seconds").style.display = "block";
 			document.getElementById("footer").style.display = "block";
 
-			var tempone = `${data[0]}`;
-			var temptwo = `${data[1]}`;
-			var tempthree = `${data[2]}`;
-			var tempfour = `${data[3]}`;
-			var tempfive = `${data[4]}`;
+			var tempone = `${data.songs.data[0]}`;
+			var temptwo = `${data.songs.data[1]}`;
+			var tempthree = `${data.songs.data[2]}`;
+			var tempfour = `${data.songs.data[3]}`;
+			var tempfive = `${data.songs.data[4]}`;
 
 
 			if (tempone === "undefined") {
@@ -59,84 +51,74 @@ function firstF() {
 				document.getElementById("sfirst").style.display = "none";
 			} else {
 				document.getElementById("errresult").style.display = "none";
-				var songnameone = `${data[0].song}`;
-				var albumone = `${data[0].album}`;
-				var imageone = `${data[0].image}`;
-				var linkone = `${data[0].media_url}`;
-				var artistone = `${data[0].singers}`;
-				var id_one = `${data[0].id}`;
-				var playone = id_one;
+				var songnameone = `${data.songs.data[0].title}`;
+				var albumone = `${data.songs.data[0].album}`;
+				var imageone = `${data.songs.data[0].image}`;
+				var artistone = `${data.songs.data[0].more_info.singers}`;
+				var id_one = `${data.songs.data[0].id}`;
 				document.getElementById("tu").innerHTML = "<h1 class='headingtwo'>" + songnameone + "</h1><br><p class='parag'>" + artistone + "</p><br><p class='parag'> Album : " + albumone + "</p>";
 				document.getElementById("imageone").src = imageone;
-				document.getElementById("dldone").href = "download/?n=" + songnameone + "&link=" + linkone;
-				document.getElementById("playone").href = "play/?id=" + playone + "&n=" + songnameone;
+				document.getElementById("dldone").href = "download/?id=" + id_one;
+				document.getElementById("playone").href = "play/?id=" + id_one + "&n=" + songnameone;
 			}
 
 
 			if (temptwo === "undefined") {
 				document.getElementById("ssecond").style.display = "none";
 			} else {
-				var songnametwo = `${data[1].song}`;
-				var albumtwo = `${data[1].album}`;
-				var imagetwo = `${data[1].image}`;
-				var linktwo = `${data[1].media_url}`;
-				var artisttwo = `${data[1].singers}`;
-				var id_two = `${data[1].id}`;
-				var playtwo = id_two;
+				var songnametwo = `${data.songs.data[1].title}`;
+				var albumtwo = `${data.songs.data[1].album}`;
+				var imagetwo = `${data.songs.data[1].image}`;
+				var artisttwo = `${data.songs.data[1].more_info.singers}`;
+				var id_two = `${data.songs.data[1].id}`;
 				document.getElementById("hin").innerHTML = "<h1 class='headingtwo'>" + songnametwo + "</h1><br><p class='parag'>" + artisttwo + "</p><br><p class='parag'> Album : " + albumtwo + "</p>";
 				document.getElementById("imagetwo").src = imagetwo;
-				document.getElementById("dldtwo").href = "download/?n=" + songnametwo + "&link=" + linktwo;
-				document.getElementById("playtwo").href = "play/?id=" + playtwo + "&n=" + songnametwo;
+				document.getElementById("dldtwo").href = "download/?id=" + id_two;
+				document.getElementById("playtwo").href = "play/?id=" + id_two + "&n=" + songnametwo;
 			}
 
 
 			if (tempthree === "undefined") {
 				document.getElementById("sthird").style.display = "none";
 			} else {
-				var songnamethree = `${data[2].song}`;
-				var albumthree = `${data[2].album}`;
-				var imagethree = `${data[2].image}`;
-				var linkthree = `${data[2].media_url}`;
-				var artistthree = `${data[2].singers}`;
-				var id_three = `${data[2].id}`;
-				var playthree = id_three;
+				var songnamethree = `${data.songs.data[2].title}`;
+				var albumthree = `${data.songs.data[2].album}`;
+				var imagethree = `${data.songs.data[2].image}`;
+				var artistthree = `${data.songs.data[2].more_info.singers}`;
+				var id_three = `${data.songs.data[2].id}`;
 				document.getElementById("life").innerHTML = "<h1 class='headingtwo'>" + songnamethree + "</h1><br><p class='parag'>" + artistthree + "</p><br><p class='parag'> Album : " + albumthree + "</p>";
 				document.getElementById("imagethree").src = imagethree;
-				document.getElementById("dldthree").href = "download/?n=" + songnamethree + "&link=" + linkthree;
-				document.getElementById("playthree").href = "play/?id=" + playthree + "&n=" + songnamethree;
+				document.getElementById("dldthree").href = "download/?id=" + id_three;
+				document.getElementById("playthree").href = "play/?id=" + id_three + "&n=" + songnamethree;
 			}
 
 
 			if (tempfour === "undefined") {
 				document.getElementById("sfourth").style.display = "none";
 			} else {
-				var songnamefour = `${data[3].song}`;
-				var albumfour = `${data[3].album}`;
-				var imagefour = `${data[3].image}`;
-				var linkfour = `${data[3].media_url}`;
-				var artistfour = `${data[3].singers}`;
-				var id_four = `${data[3].id}`;
-				var playfour = id_four;
+				var songnamefour = `${data.songs.data[3].title}`;
+				var albumfour = `${data.songs.data[3].album}`;
+				var imagefour = `${data.songs.data[3].image}`;
+				var artistfour = `${data.songs.data[3].more_info.singers}`;
+				var id_four = `${data.songs.data[3].id}`;
 				document.getElementById("iamtuhin").innerHTML = "<h1 class='headingtwo'>" + songnamefour + "</h1><br><p class='parag'>" + artistfour + "</p><br><p class='parag'> Album : " + albumfour + "</p>";
 				document.getElementById("imagefour").src = imagefour;
-				document.getElementById("dldfour").href = "download/?n=" + songnamefour + "&link=" + linkfour;
-				document.getElementById("playfour").href = "play/?id=" + playfour + "&n=" + songnamefour;
+				document.getElementById("dldfour").href = "download/?id=" + id_four;
+				document.getElementById("playfour").href = "play/?id=" + id_four + "&n=" + songnamefour;
 			}
 
 			if (tempfive === "undefined") {
 				document.getElementById("sfifth").style.display = "none";
 			} else {
-				var songnamefive = `${data[4].song}`;
-				var albumfive = `${data[4].album}`;
-				var imagefive = `${data[4].image}`;
-				var linkfive = `${data[4].media_url}`;
-				var artistfive = `${data[4].singers}`;
-				var id_five = `${data[4].id}`;
-				var playfive = id_five;
+				var songnamefive = `${data.songs.data[4].title}`;
+				var albumfive = `${data.songs.data[4].album}`;
+				var imagefive = `${data.songs.data[4].image}`;
+				var artistfive = `${data.songs.data[4].more_info.singers}`;
+				var id_five = `${data.songs.data[4].id}`;
 				document.getElementById("ga").innerHTML = "<h1 class='headingtwo'>" + songnamefive + "</h1><br><p class='parag'>" + artistfive + "</p><br><p class='parag'> Album : " + albumfive + "</p>";
 				document.getElementById("imagefive").src = imagefive;
-				document.getElementById("dldfive").href = "download/?n=" + songnamefive + "&link=" + linkfive;
-				document.getElementById("playfive").href = "play/?id=" + playfive + "&n=" + songnamefive;
+				document.getElementById("dldfive").href = "download/?id=" + id_five;
+				document.getElementById("playfive").href = "play/?id=" + id_five + "&n=" + songnamefive;
 			}
 		}
 	});
@@ -153,5 +135,6 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
 /*!
  * Made by Tuhin Kanti Pal
+ * No More using Jiosaavn API by Sumanjay, Musicder is now fetch every Details from jiosaavn.com (Proxied using cloudflare worker)
  * Visit https://tu.hin.life
  */
