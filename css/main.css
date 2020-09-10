@@ -77,7 +77,7 @@ body {
 
 .formdivt form .inner-form .input-field input::-webkit-input-placeholder {
 	color: #222;
-	font-size: 16px
+	font-size: 12px
 }
 
 .formdivt form .inner-form .input-field input:focus,

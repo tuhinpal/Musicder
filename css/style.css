@@ -9,7 +9,17 @@
 	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
-	padding: 12px 20px;
+	padding: 8px 20px;
+	transform: translate(0px, 100px);
+}
+
+.headingbelow {
+	color: #00ad5f;
+	font-family: Krona One;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 10px;
 	transform: translate(0px, 100px);
 }
 
