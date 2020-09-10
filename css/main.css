@@ -72,12 +72,13 @@ body {
 
 .formdivt form .inner-form .input-field input:-moz-placeholder {
 	color: #222;
-	font-size: 16px
+	font-size: 16px;
+	font-family: Poppins
 }
 
 .formdivt form .inner-form .input-field input::-webkit-input-placeholder {
-	color: #222;
-	font-size: 14px
+	color: #7f9479;
+	font-size: 13px
 }
 
 .formdivt form .inner-form .input-field input:focus,
