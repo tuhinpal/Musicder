@@ -55,7 +55,9 @@
 
 
 ## Changelog:
-*Due to frequent api error of [Sumanjay's Jiosaavn Unofficial API](https://github.com/cyberboysumanjay/JioSaavnAPI "Sumanjay's Jiosaavn Unofficial API"), I decided to move on and use Jiosaavn's Original API, However these are proxied with Cloudflare Workers to disable CORS Verification.*
+*Due to frequent api error of [Sumanjay's Jiosaavn Unofficial API](https://github.com/cyberboysumanjay/JioSaavnAPI "Sumanjay's Jiosaavn Unofficial API"), I decided to move on and use Jiosaavn's Original API, However these are proxied with Cloudflare Workers to disable CORS Verification.*<br><br>
+## How it works: <br>
+[![Watch it on Youtube](https://img.shields.io/badge/watch--it--on--youtube-red?logo=youtube&style=for-the-badge "Watch it on Youtube")](https://youtu.be/Phf3-SgYmbM "Watch it on Youtube")
 
 
 <br><br>
