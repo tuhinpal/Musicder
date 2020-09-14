@@ -4,14 +4,12 @@
  * Visit https://tu.hin.life
  */
 
+//get data from parameters
 let params = new URLSearchParams(location.search);
 var songid = params.get('id');
+var songn = params.get('n');
 
-function lyricsS() {
-	document.getElementById('lyricsdiv').style.display = 'block';
-	document.getElementById('lyricsinit').style.visibility = 'hidden';
-}
-
+//fetch data from api
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function () {
 	if (this.readyState == 4 && this.status == 200) {
@@ -66,7 +64,6 @@ xmlhttp.onreadystatechange = function () {
 			document.getElementById("lyricsinit").style.visibility = "visible";
 			var lyricsid = songid;
 			//lyrics fetch
-
 			var lyricsinit = function (n, e) {
 				var s = new XMLHttpRequest;
 				s.open("GET", n, !0), s.responseType = "json", s.onload = function () {
@@ -74,6 +71,7 @@ xmlhttp.onreadystatechange = function () {
 					200 == n ? e(null, s.response) : e(n)
 				}, s.send()
 			};
+			//this is the lyrics api
 			lyricsinit("https://lyrics.musicder.tk/?lyrics_id=" + lyricsid, function (n, e) {
 				if (null != n) console.error(n);
 				else {
@@ -81,29 +79,34 @@ xmlhttp.onreadystatechange = function () {
 					document.getElementById("lyrics").innerHTML = s
 				}
 			});
-
-			//end lyrics fetch
-
 		} else {}
 	}
 };
+//this is the song detail api
 xmlhttp.open("GET", "https://songapi.musicder.tk/?pids=" + songid, true);
 xmlhttp.send();
 
+//when lyricsask tapped lyrics will shown (if lyrics available)
+function lyricsS() {
+	document.getElementById('lyricsdiv').style.display = 'block';
+	document.getElementById('lyricsinit').style.visibility = 'hidden';
+}
+
+//webshare api
 function share() {
 	if (navigator.share) {
 		navigator.share({
 				title: 'Share | Musicder',
-				text: "Listen " + songname + " on Musicder." + "\n\n👉",
+				text: "Listen " + songn + " on Musicder." + "\n\n👉",
 				url: window.location.href
 			}).then(() => {
-				console.log('Thanks for sharing!');
+				console.log('Thanks for Sharing!');
 			})
 			.catch(err => {
 				console.log(`Couldn't share because of`, err.message);
 			});
 	} else {
-		console.log('web share not supported');
+		console.log('Web Share is not Supported');
 	}
 }
 
