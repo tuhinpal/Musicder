@@ -6,7 +6,6 @@
 
 let params = new URLSearchParams(location.search);
 var songid = params.get('id');
-var sharename = params.get('n');
 
 function lyricsS() {
 	document.getElementById('lyricsdiv').style.display = 'block';
@@ -25,6 +24,7 @@ xmlhttp.onreadystatechange = function () {
 		var data = JSON.parse(dataraw);
 		var songname = data.tuhinr.song;
 		var artist = data.tuhinr.singers;
+		var album = data.tuhinr.album;
 		var songimagesmall = data.tuhinr.image;
 		var songimage = songimagesmall.replace("150x150", "500x500");
 		var audiolinkget = data.tuhinr.media_preview_url;
@@ -35,16 +35,55 @@ xmlhttp.onreadystatechange = function () {
 		document.getElementById("songname").innerHTML = songname;
 		document.getElementById("songimage").src = songimage;
 		document.getElementById("songby").innerHTML = artist;
-		document.getElementById("songplay").innerHTML = "<audio controls><source src='" + audiolink + "' type='audio/mp3' /></audio>";
+		document.getElementById("songplay").innerHTML = "<audio id='audiocontrols' controls><source src='" + audiolink + "' type='audio/mp3' /></audio>";
+		// Media Session API
+		if ('mediaSession' in navigator) {
+			navigator.mediaSession.metadata = new MediaMetadata({
+				title: songname,
+				artist: artist,
+				album: album,
+				artwork: [{
+						src: songimagesmall,
+						sizes: '150x150',
+						type: 'image/png'
+					},
+					{
+						src: songimage,
+						sizes: '500x500',
+						type: 'image/png'
+					},
+				]
+			});
+			navigator.mediaSession.setActionHandler('play', function () {
+				audiocontrols.play();
+			});
+			navigator.mediaSession.setActionHandler('pause', function () {
+				audiocontrols.pause();
+			});
+		}
+		//lyrics
 		if (has_lyrics == "true") {
 			document.getElementById("lyricsinit").style.visibility = "visible";
 			var lyricsid = songid;
 			//lyrics fetch
-			
-var lyricsinit=function(n,e){var s=new XMLHttpRequest;s.open("GET",n,!0),s.responseType="json",s.onload=function(){var n=s.status;200==n?e(null,s.response):e(n)},s.send()};lyricsinit("https://lyrics.musicder.tk/?lyrics_id="+lyricsid,function(n,e){if(null!=n)console.error(n);else{var s=`${e.lyrics}`;document.getElementById("lyrics").innerHTML=s}});
-		
-		//end lyrics fetch
-		
+
+			var lyricsinit = function (n, e) {
+				var s = new XMLHttpRequest;
+				s.open("GET", n, !0), s.responseType = "json", s.onload = function () {
+					var n = s.status;
+					200 == n ? e(null, s.response) : e(n)
+				}, s.send()
+			};
+			lyricsinit("https://lyrics.musicder.tk/?lyrics_id=" + lyricsid, function (n, e) {
+				if (null != n) console.error(n);
+				else {
+					var s = `${e.lyrics}`;
+					document.getElementById("lyrics").innerHTML = s
+				}
+			});
+
+			//end lyrics fetch
+
 		} else {}
 	}
 };
@@ -55,7 +94,7 @@ function share() {
 	if (navigator.share) {
 		navigator.share({
 				title: 'Share | Musicder',
-				text: "Listen " + sharename + " on Musicder." + "\n\n👉",
+				text: "Listen " + songname + " on Musicder." + "\n\n👉",
 				url: window.location.href
 			}).then(() => {
 				console.log('Thanks for sharing!');
