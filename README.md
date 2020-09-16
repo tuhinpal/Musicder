@@ -14,7 +14,7 @@
 </p>
   </h1>
 <p align="center">
-  <a href="https://musicder.tk">
+  <a href="https://musicder.in">
     <img src="https://img.shields.io/badge/Download--A--Song--Now-green?logo=copy&style=for-the-badge"
          alt="Download a Song" width="200">
  </a>
