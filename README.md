@@ -47,10 +47,10 @@
 *Musicder is a Javascript project. It fetch song's details from an API and Serve it.*<br>
 ### Deploy:<br>
 
-**You don't need any special server for This Frontend. To Deploy it :** <br>
+**Suugest Netlify if you want song will download with their original name :** <br>
 
-*i.   Download the Source Code.*<br>
-*ii.  Upload it on Server.*<br>
+*i.   Fork this Repo(Also Give a ⭐).*<br>
+*ii.  Connect it with Netlify.*<br>
 *iii.  (Optional) Replace API Urls to Yours in <tt>js/main.js</tt> & <tt>js/play.js</tt> & <tt>js/download.js</tt>.*<br><br>
 
 
