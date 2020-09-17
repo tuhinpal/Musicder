@@ -19,14 +19,15 @@ xmlhttp.onreadystatechange = function () {
 		document.getElementById('loads').style.display = 'none';
 		var data = JSON.parse(dataraw);
 		var songname = data.tuhinr.song;
-		var link = data.tuhinr.tuhindownloadlink;
+		var linkr = data.tuhinr.tuhindownloadlink;
+		var link = linkr.replace("https://", "/");
 		document.title = "Download " + songname;
 		document.getElementById("songname").innerHTML = "Download " + songname;
-		document.getElementById("qone").href = link;
+		document.getElementById("qone").innerHTML = "<a href='" + link + "' class='textdld' target='_self' download='" + songname + ".mp3'>96 Kbps</a>"
 		var linkosz = link.replace("_96", "_160");
-		document.getElementById("qtwo").href = linkosz;
+		document.getElementById("qtwo").innerHTML = "<a href='" + linkosz + "' class='textdld' target='_self' download='" + songname + ".mp3'>128 Kbps</a>"
 		var linkttz = link.replace("_96", "_320");
-		document.getElementById("qthree").href = linkttz;
+		document.getElementById("qthree").innerHTML = "<a href='" + linkttz + "' class='textdld' target='_self' download='" + songname + ".mp3'>320 Kbps</a>"
 	}
 };
 xmlhttp.open("GET", "https://dldapi.musicder.tk/?pids=" + id, true);
