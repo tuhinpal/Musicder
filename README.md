@@ -47,7 +47,7 @@
 *Musicder is a Javascript project. It fetch song's details from an API and Serve it.*<br>
 ### Deploy:<br>
 
-**Suugest Netlify if you want song will download with their original name :** <br>
+**Suugest Netlify if you want that song will download with their original name :** <br>
 
 *i.   Fork this Repo(Also Give a ⭐).*<br>
 *ii.  Connect it with Netlify.*<br>
