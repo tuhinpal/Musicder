@@ -23,11 +23,23 @@ xmlhttp.onreadystatechange = function () {
 		var link = linkr.replace("https://", "/");
 		document.title = "Download " + songname;
 		document.getElementById("songname").innerHTML = "Download " + songname;
-		document.getElementById("qone").innerHTML = "<a href='" + link + "' class='textdld' target='_self' download='" + songname + ".mp3'>96 Kbps</a>"
+
+		//96 kbps
+		document.getElementById("qone").href = link;
+		document.getElementById("qone").target = "_self";
+		document.getElementById("qone").download = songname + ".mp3";
+
+		//128 kbps
 		var linkosz = link.replace("_96", "_160");
-		document.getElementById("qtwo").innerHTML = "<a href='" + linkosz + "' class='textdld' target='_self' download='" + songname + ".mp3'>128 Kbps</a>"
+		document.getElementById("qtwo").href = linkosz;
+		document.getElementById("qtwo").target = "_self";
+		document.getElementById("qtwo").download = songname + ".mp3";
+
+		//320 kbps
 		var linkttz = link.replace("_96", "_320");
-		document.getElementById("qthree").innerHTML = "<a href='" + linkttz + "' class='textdld' target='_self' download='" + songname + ".mp3'>320 Kbps</a>"
+		document.getElementById("qthree").href = linkttz;
+		document.getElementById("qthree").target = "_self";
+		document.getElementById("qthree").download = songname + ".mp3";
 	}
 };
 xmlhttp.open("GET", "https://dldapi.musicder.tk/?pids=" + id, true);
