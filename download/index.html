@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="author" content="Tuhin Kanti Pal">
-      <meta name="description" content="Stream with Lyrics or Download your Favourite Musics for free without any Ads">
-      <meta name="keywords" content="Music, Musicder, JavaScript , Download Free Music, Stream Music Online, Lyrics , Music API">
-      <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@900&display=swap" rel="stylesheet">
-      <link href="../css/download.css" rel="stylesheet" />
-      <link rel="shortcut icon" href="../favicon.ico">
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177605755-1"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'UA-177605755-1');
-      </script>
-   </head>
-   <body onload="document.getElementById('content').style.display = 'none'; ">
-      <div id="content">
-         <h1 class="heading" id="songname"></h1>
-         <p class="quality">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Tuhin Kanti Pal">
+    <link rel="manifest" href="../manifest.json" />
+    <meta name="description" content="Stream with Lyrics or Download your Favourite Musics for free without any Ads">
+    <meta name="keywords" content="Music, Musicder, JavaScript , Download Free Music, Stream Music Online, Lyrics , Music API">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@900&display=swap" rel="stylesheet">
+    <link href="../css/download.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177605755-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177605755-1');
+    </script>
+</head>
+
+<body onload="document.getElementById('content').style.display = 'none'; ">
+    <div id="content">
+        <h1 class="heading" id="songname"></h1>
+        <p class="quality">
             Please select your preferred quality
-         </p>
-         <p class="center">
+        </p>
+        <p class="center">
             <a class="activityb" id="qone">96 Kbps</a>
             <br> <br>
             <a class="activityb" id="qtwo">128 Kbps</a>
             <br> <br>
             <a class="activityb" id="qthree">320 Kbps</a>
-         </p>
-         <div class="logodiv">
+        </p>
+        <div class="logodiv">
             <h1 onclick="window.location.href='https://musicder.tk/';" class="logo">MUSICDER</h1>
-         </div>
-      </div>
-      <div id="loads">
-         <img id="image" src="../img/loading.gif" class="loading" width="150" height="150">
-      </div>
-   </body>
-   <script src="../js/download.js"></script>
+        </div>
+    </div>
+    <div id="loads">
+        <img id="image" src="../img/loading.gif" class="loading" width="150" height="150">
+    </div>
+</body>
+<script src="../js/download.js"></script>
+<script>
+    navigator.serviceWorker && navigator.serviceWorker.register('./sw.js').then(function(registration) {
+        console.log('Excellent, registered with scope: ', registration.scope);
+    });
+</script>
+
 </html>
 <!Made by Tuhin. Send Mail to me[at]mailtuhin[dot]ml for contact>
