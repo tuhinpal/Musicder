@@ -1,6 +1,6 @@
 /*!
  * Made by Tuhin Kanti Pal
- * This Section is Not using Jiosaavn Unofficial API by Sumanjay anymore
+ * Using Own Jiosaavn API  https://github.com/cachecleanerjeet/jiosaavnapi
  * Visit https://tu.hin.life
  */
 
@@ -14,22 +14,19 @@ var songn = params.get('n');
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        var datarawo = (this.responseText);
-        var dataraw = datarawo.replace(songid, 'tuhinr');
+        var dataraw = (this.responseText);
+        var data = JSON.parse(dataraw);
         document.getElementById('content').style.display = 'block';
         document.getElementById('footer').style.display = 'block';
         document.getElementById('matha').style.display = 'block';
         document.getElementById('loads').style.display = 'none';
         var data = JSON.parse(dataraw);
-        var songname = data.tuhinr.song;
-        var artist = data.tuhinr.singers;
-        var album = data.tuhinr.album;
-        var songimagesmall = data.tuhinr.image;
-        var songimage = songimagesmall.replace("150x150", "500x500");
-        var audiolinkget = data.tuhinr.media_preview_url;
-        var audiolinkr = audiolinkget.replace("preview.saavncdn.com", "aac.saavncdn.com");
-        var audiolink = audiolinkr.replace("96_p", "96");
-        var has_lyrics = data.tuhinr.has_lyrics;
+        var songname = data.song;
+        var artist = data.singers;
+        var album = data.album;
+        var has_lyrics = data.has_lyrics;
+        var songimage = data.image;
+        var audiolink = data.media_url;
         document.title = "Playing " + songname;
         document.getElementById("songname").innerHTML = songname;
         document.getElementById("songimage").src = songimage;
@@ -42,16 +39,10 @@ xmlhttp.onreadystatechange = function() {
                 artist: artist,
                 album: album,
                 artwork: [{
-                        src: songimagesmall,
-                        sizes: '150x150',
-                        type: 'image/png'
-                    },
-                    {
-                        src: songimage,
-                        sizes: '500x500',
-                        type: 'image/png'
-                    },
-                ]
+                    src: songimage,
+                    sizes: '500x500',
+                    type: 'image/png'
+                }, ]
             });
             navigator.mediaSession.setActionHandler('play', function() {
                 audiocontrols.play();
@@ -72,7 +63,7 @@ xmlhttp.onreadystatechange = function() {
                 }, s.send()
             };
             //this is the lyrics api
-            lyricsinit("https://lyrics.musicder.tk/?lyrics_id=" + lyricsid, function(n, e) {
+            lyricsinit("https://songapi.thetuhin.com/lyrics?id=" + lyricsid, function(n, e) {
                 if (null != n) console.error(n);
                 else {
                     var s = `${e.lyrics}`;
@@ -85,7 +76,7 @@ xmlhttp.onreadystatechange = function() {
     }
 };
 //this is the song detail api
-xmlhttp.open("GET", "https://songapi.musicder.tk/?pids=" + songid, true);
+xmlhttp.open("GET", "https://songapi.thetuhin.com/song?id=" + songid, true);
 xmlhttp.send();
 
 //when lyricsask tapped lyrics will shown (if lyrics available)
@@ -115,5 +106,5 @@ function share() {
 /*!
  * Made by Tuhin Kanti Pal
  * Visit https://tu.hin.life
- * This Section is Not using Jiosaavn Unofficial API by Sumanjay anymore
+ * Using Own Jiosaavn API  https://github.com/cachecleanerjeet/jiosaavnapi
  */

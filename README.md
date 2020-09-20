@@ -39,29 +39,22 @@
 *2. Frontend.* <br><br>
 ## 1. Backend
 ### Brief:<br>
-*I am using JioSaavn's Original API to Search Songs, Stream Songs, Download Songs & Show lyrics, However these APIs (Original Jiosaavn API) is proxied with Cloudflare workers.*<br>
+*I am using my Own [JioSaavn UnOfficial API](https://github.com/cachecleanerjeet/jiosaavnapi "JioSaavnAPI") to Search Songs, Stream Songs, Download Songs & Show lyrics.*<br>
 ### Installation:<br>
-*Go to [Here](https://github.com/cachecleanerjeet/Musicder/tree/backend "Here") for Setup Cloudflare Proxy to disable CORS Verification.*<br><br> 
+*Go to [Here](https://github.com/cachecleanerjeet/jiosaavnapi "JioSaavnAPI") for installation instructions.*<br><br> 
 
 ## 2. Frontend
 ### Brief: <br>
-*Musicder is a Javascript project. It fetch song's details from an API and Serve it.*<br>
+*Musicder is a Javascript project. It fetch song's details from a [API](https://github.com/cachecleanerjeet/jiosaavnapi "JioSaavnAPI") and Serve it.*<br>
 ### Deploy:<br>
 
-**Suugest Netlify if you want that song will download with their original name :** <br>
+**I will suggest Netlify if you want that song will download with their original name.** <br>
 
 *i.   Fork this Repo(Also Give a ⭐).*<br>
 *ii.  Connect it with Netlify.*<br>
 *iii.  (Optional) Replace API Urls to Yours in <tt>js/main.js</tt> & <tt>js/play.js</tt> & <tt>js/download.js</tt>.*<br><br>
 
-
-## Changelog:
-*Due to frequent api error of [Sumanjay's Jiosaavn Unofficial API](https://github.com/cyberboysumanjay/JioSaavnAPI "Sumanjay's Jiosaavn Unofficial API"), I decided to move on and use Jiosaavn's Original API, However these are proxied with Cloudflare Workers to disable CORS Verification.*<br><br>
-## How it works: <br>
-[![Watch it on Youtube](https://img.shields.io/badge/watch--it--on--youtube-red?logo=youtube&style=for-the-badge "Watch it on Youtube")](https://youtu.be/Phf3-SgYmbM "Watch it on Youtube")
-
-
-<br><br>
+<br>
 <p align="center"> <b>My Website & Social</b></p>
 <br>
 <p align="center">
