@@ -16,10 +16,10 @@ xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var dataraw = (this.responseText);
         var data = JSON.parse(dataraw);
+        document.getElementById('loads').style.display = 'none';
         document.getElementById('content').style.display = 'block';
         document.getElementById('footer').style.display = 'block';
         document.getElementById('matha').style.display = 'block';
-        document.getElementById('loads').style.display = 'none';
         var data = JSON.parse(dataraw);
         var songname = data.song;
         var artist = data.singers;
