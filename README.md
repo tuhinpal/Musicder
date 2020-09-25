@@ -17,6 +17,10 @@
   <a href="https://musicder.tk">
     <img src="https://img.shields.io/badge/Download--A--Song--Now-green?logo=copy&style=for-the-badge"
          alt="Download a Song" width="200">
+ </a><br><br>
+    <a href="https://t.me/musicder_bot">
+    <img src="https://img.shields.io/badge/Musicder%20bot%20is%20now%20on%20telegram,%20Download%20a%20song%20from%20telegram%20-blue?logo=copy&style=for-the-badge"
+         alt="Telegram" width="450">
  </a>
 
 <br>
