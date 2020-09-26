@@ -14,7 +14,7 @@
 </p>
   </h1>
 <p align="center">
-  <a href="https://musicder.tk">
+  <a href="https://musicder.net">
     <img src="https://img.shields.io/badge/Download--A--Song--Now-green?logo=copy&style=for-the-badge"
          alt="Download a Song" width="200">
  </a><br><br>
@@ -55,8 +55,9 @@
 **I will suggest Netlify if you want that song will download with their original name.** <br>
 
 *i.   Fork this Repo(Also Give a ⭐).*<br>
-*ii.  Connect it with Netlify.*<br>
-*iii.  (Optional) Replace API Urls to Yours in <tt>js/main.js</tt> & <tt>js/play.js</tt> & <tt>js/download.js</tt>.*<br><br>
+*ii.   Open <tt>_redirects</tt> & remove Line No. 2 & 3.*<br>
+*iii.  Connect it with Netlify.*<br>
+*iv.  (Optional) Replace API Urls to Yours in <tt>js/main.js</tt> & <tt>js/play.js</tt> & <tt>js/download.js</tt>.*<br><br>
 
 <br>
 <p align="center"> <b>My Website & Social</b></p>
