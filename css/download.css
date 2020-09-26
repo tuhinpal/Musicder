@@ -16,7 +16,7 @@
 .logodiv {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 450px;
+    margin-top: 230px;
     width: 150px;
     height: 50px;
     background: #ffffff;
@@ -30,6 +30,29 @@
     font-weight: bold;
     text-align: center;
     transform: translate(0px, 12px);
+}
+
+.showcase {
+    transform: translate(0px, 50px);
+    border-radius: 10px;
+}
+
+.showcasediv {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.makingposs {
+    color: #1C1C1C;
+    font-family: Krona One;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 12px 8px;
+    transform: translate(0px, 75px);
 }
 
 .quality {
