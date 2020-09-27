@@ -7,16 +7,17 @@
 let params = new URLSearchParams(location.search);
 var id = params.get('id');
 
-document.getElementById("songname").innerHTML = "Download " + name;
-
+function visualTimer() {
+    document.getElementById('content').style.display = 'block';
+    document.getElementById('loads').style.display = 'none';
+}
 
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var dataraw = (this.responseText);
         var data = JSON.parse(dataraw);
-        document.getElementById('content').style.display = 'block';
-        document.getElementById('loads').style.display = 'none';
+        var visual = setInterval(visualTimer, 1000);
         var songname = data.song;
         var linkr = data.media_url;
         var link = linkr.replace("https://aac.saavncdn.com/", "/cdn/");
