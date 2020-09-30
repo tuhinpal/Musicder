@@ -22,7 +22,7 @@ xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var dataraw = (this.responseText);
         var data = JSON.parse(dataraw);
-        var visual = setInterval(visualTimer, 1000);
+        var visual = setInterval(visualTimer, 1500);
         var data = JSON.parse(dataraw);
         var songname = data.song;
         var artist = data.singers;
