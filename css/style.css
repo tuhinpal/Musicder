@@ -4,128 +4,138 @@
  */
 
 .heading {
-	color: #00ad5f;
-	font-family: Krona One;
-	font-size: 25px;
-	font-weight: bold;
-	text-align: center;
-	padding: 8px 20px;
-	transform: translate(0px, 100px);
+    color: #00ad5f;
+    font-family: Krona One;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 20px;
+    transform: translate(0px, 100px);
 }
 
 .headingbelow {
-	color: #00ad5f;
-	font-family: Krona One;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
-	padding: 0px 10px;
-	transform: translate(0px, 100px);
+    color: #00ad5f;
+    font-family: Krona One;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 10px;
+    transform: translate(0px, 100px);
 }
 
 .headingtwo {
-	color: #00ad5f;
-	font-family: Krona One;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	padding: 10px 15b px;
+    color: #00ad5f;
+    font-family: Krona One;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15b px;
 }
 
 .parag {
-	color: #00ad5f;
-	font-family: Krona One;
-	font-size: 12px;
-	font-weight: bold;
-	text-align: center;
-	padding: 0px 10px;
+    color: #00ad5f;
+    font-family: Krona One;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 10px;
 }
 
 .paragone {
-	color: #ffffff;
-	font-family: Krona One;
-	font-size: 10px;
-	text-align: center;
-	padding: 0px 10px;
+    color: #ffffff;
+    font-family: Krona One;
+    font-size: 10px;
+    text-align: center;
+    padding: 0px 10px;
 }
 
 .center {
-	text-align: center;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .activityb {
-	box-shadow: 0px 5px 14px -7px #276873;
-	background: linear-gradient(to bottom, #00ad5f 5%, #196470 100%);
-	background-color: #00ad5f;
-	border-radius: 10px;
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-	cursor: pointer;
-	color: #ffffff;
-	font-family: Krona One;
-	font-size: 15px;
-	font-weight: bold;
-	padding: 13px 15px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #67818a;
+    box-shadow: 0px 5px 14px -7px #276873;
+    background: linear-gradient(to bottom, #00ad5f 5%, #196470 100%);
+    background-color: #00ad5f;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Krona One;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 13px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #67818a;
 }
 
 .activityb:hover {
-	background: linear-gradient(to bottom, #196470 5%, #00ad5f 100%);
-	background-color: #196470;
+    background: linear-gradient(to bottom, #196470 5%, #00ad5f 100%);
+    background-color: #196470;
 }
 
 .activityb:active {
-	position: relative;
-	top: 0px;
+    position: relative;
+    top: 0px;
 }
 
 .loading {
-	position: absolute;
-	margin: auto;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .footerdiv {
-	background-color: #171616;
+    background-color: #171616;
 }
 
 .firstsong {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .secondsong {
-	background-color: #171616;
+    background-color: #171616;
 }
 
 .thirdsong {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .fourthsong {
-	background-color: #171616;
+    background-color: #171616;
 }
 
 .fifthsong {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .errres {
-	background-color: #171616;
+    background-color: #171616;
 }
 
 .songimage {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+}
+
+.pageload {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 99;
 }
 
 

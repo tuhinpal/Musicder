@@ -9,12 +9,6 @@ let params = new URLSearchParams(location.search);
 var songid = params.get('id');
 var songn = params.get('n');
 
-function visualTimer() {
-    document.getElementById('loads').style.display = 'none';
-    document.getElementById('content').style.display = 'block';
-    document.getElementById('footer').style.display = 'block';
-    document.getElementById('matha').style.display = 'block';
-}
 
 //fetch data from api
 var xmlhttp = new XMLHttpRequest();
@@ -22,7 +16,7 @@ xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var dataraw = (this.responseText);
         var data = JSON.parse(dataraw);
-        var visual = setInterval(visualTimer, 1500);
+        document.getElementById('loads').style.display = 'none';
         var data = JSON.parse(dataraw);
         var songname = data.song;
         var artist = data.singers;

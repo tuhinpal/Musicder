@@ -8,7 +8,6 @@ function firstF() {
     var songname = document.getElementById("search").value;
     var snformat = songname.replace(/ /g, "+");
     document.getElementById("firsts").style.display = "none";
-    document.getElementById("footer").style.display = "none";
     document.getElementById("loads").style.display = "block";
     var getJSON = function(url, callback) {
 
@@ -37,7 +36,6 @@ function firstF() {
         } else {
             document.getElementById("loads").style.display = "none";
             document.getElementById("seconds").style.display = "block";
-            document.getElementById("footer").style.display = "block";
 
             var tempone = `${data[0]}`;
             var temptwo = `${data[1]}`;
