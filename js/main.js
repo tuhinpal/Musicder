@@ -8,6 +8,7 @@ function firstF() {
     var songname = document.getElementById("search").value;
     var snformat = songname.replace(/ /g, "+");
     document.getElementById("firsts").style.display = "none";
+    document.getElementById("footer").style.display = "block";
     document.getElementById("loads").style.display = "block";
     var getJSON = function(url, callback) {
 

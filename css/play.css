@@ -17,7 +17,7 @@ body {
     margin-right: auto;
     margin-top: 12px;
     width: 340px;
-    background: #00AD5F;
+    background: #e07224;
     border-radius: 12px;
 }
 
@@ -26,7 +26,7 @@ body {
     margin-right: auto;
     margin-top: 40px;
     width: 340px;
-    background: #00AD5F;
+    background: #e07224;
     border-radius: 12px;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .song {
-    background: #00AD5F;
+    background: #e07224;
     text-align: center;
     padding-top: 10px;
     padding-right: 20px;
@@ -96,7 +96,7 @@ body {
     margin-top: 30px;
     width: 70px;
     height: 25px;
-    background: #02d174;
+    background: #883a03;
     border-radius: 25px;
 }
 
@@ -144,7 +144,7 @@ body {
 }
 
 .logo {
-    color: #1C1C1C;
+    color: #e07224;
     font-family: 'Bitter', serif;
     font-size: 20px;
     font-weight: bold;

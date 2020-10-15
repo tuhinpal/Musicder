@@ -4,7 +4,7 @@
  */
 
 .heading {
-    color: #00ad5f;
+    color: #e07224;
     font-family: Krona One;
     font-size: 25px;
     font-weight: bold;
@@ -46,7 +46,7 @@
 }
 
 .quality {
-    color: #00ad5f;
+    color: #e07224;
     font-family: Krona One;
     font-size: 12px;
     text-align: center;
@@ -61,9 +61,9 @@
 }
 
 .activityb {
-    box-shadow: 0px 5px 14px -7px #276873;
-    background: linear-gradient(to bottom, #00ad5f 5%, #196470 100%);
-    background-color: #00ad5f;
+    box-shadow: 0px 5px 14px -7px #291709;
+    background: linear-gradient(to bottom, #e07224 5%, #291709 100%);
+    background-color: #e07224;
     border-radius: 10px;
     display: inline-block;
     margin-left: auto;
@@ -79,8 +79,8 @@
 }
 
 .activityb:hover {
-    background: linear-gradient(to bottom, #196470 5%, #00ad5f 100%);
-    background-color: #196470;
+    background: linear-gradient(to bottom, #291709 5%, #e07224 100%);
+    background-color: #291709;
 }
 
 .activityb:active {
@@ -108,7 +108,7 @@
 }
 
 .logo {
-    color: #1C1C1C;
+    color: #e07224;
     font-family: 'Bitter', serif;
     font-size: 20px;
     font-weight: bold;
