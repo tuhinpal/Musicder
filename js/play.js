@@ -14,29 +14,21 @@ var songn = params.get('n');
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        var dataraw = (this.responseText);
-        var data = JSON.parse(dataraw);
+        var data = JSON.parse(this.responseText);
         document.getElementById('loads').style.display = 'none';
-        var data = JSON.parse(dataraw);
-        var songname = data.song;
-        var artist = data.singers;
-        var album = data.album;
-        var has_lyrics = data.has_lyrics;
-        var songimage = data.image;
-        var audiolink = data.media_url;
-        document.title = "Playing " + songname;
-        document.getElementById("songname").innerHTML = songname;
-        document.getElementById("songimage").src = songimage;
-        document.getElementById("songby").innerHTML = artist;
-        document.getElementById("songplay").innerHTML = "<audio id='audiocontrols' controls><source src='" + audiolink + "' type='audio/mp3' /></audio>";
+        document.title = "Playing " + data.song;
+        document.getElementById("songname").innerHTML = data.song;
+        document.getElementById("songimage").src = data.image;
+        document.getElementById("songby").innerHTML = data.singers;
+        document.getElementById("songplay").innerHTML = `<audio id="audiocontrols" controls><source src="${data.media_url}" type="audio/mp3" /></audio>`;
         // Media Session API
         if ('mediaSession' in navigator) {
             navigator.mediaSession.metadata = new MediaMetadata({
-                title: songname,
-                artist: artist,
-                album: album,
+                title: data.song,
+                artist: data.singers,
+                album: data.album,
                 artwork: [{
-                    src: songimage,
+                    src: data.image,
                     sizes: '500x500',
                     type: 'image/png'
                 }, ]
@@ -47,30 +39,22 @@ xmlhttp.onreadystatechange = function() {
             navigator.mediaSession.setActionHandler('pause', function() {
                 audiocontrols.pause();
             });
-        }
+        };
         //lyrics
-        if (has_lyrics == "true") {
-            var lyricsid = songid;
-            //lyrics fetch
-            var lyricsinit = function(n, e) {
-                var s = new XMLHttpRequest;
-                s.open("GET", n, !0), s.responseType = "json", s.onload = function() {
-                    var n = s.status;
-                    200 == n ? e(null, s.response) : e(n)
-                }, s.send()
-            };
-            //this is the lyrics api
-            lyricsinit("https://songapi.thetuhin.com/lyrics?id=" + lyricsid, function(n, e) {
-                if (null != n) console.error(n);
-                else {
-                    var s = `${e.lyrics}`;
-                    document.getElementById("lyrics").innerHTML = s
+        if (data.has_lyrics == "true") {
+            var xhr = new XMLHttpRequest();
+            xhr.addEventListener("readystatechange", function() {
+                if (this.readyState === 4) {
+                    var ldata = JSON.parse(this.responseText);
+                    document.getElementById("lyrics").innerHTML = ldata.lyrics;
                 }
             });
+            xhr.open("GET", "https://songapi.thetuhin.com/lyrics?id=" + songid);
+            xhr.send();
         } else {
             document.getElementById('lyricsinit').style.visibility = 'hidden';
-        }
-    }
+        };
+    };
 };
 //this is the song detail api
 xmlhttp.open("GET", "https://songapi.thetuhin.com/song?id=" + songid, true);

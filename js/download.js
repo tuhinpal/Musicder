@@ -20,8 +20,7 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("songname").innerHTML = "Download " + songname;
 
         //96 kbps
-        var linkosz = link.replace("_160", "_96");
-        document.getElementById("qone").href = linkosz;
+        document.getElementById("qone").href = link.replace("_160", "_96");
         document.getElementById("qone").target = "_self";
         document.getElementById("qone").download = songname + ".mp3";
 
@@ -31,8 +30,7 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("qtwo").download = songname + ".mp3";
 
         //320 kbps
-        var linkttz = link.replace("_160", "_320");
-        document.getElementById("qthree").href = linkttz;
+        document.getElementById("qthree").href = link.replace("_160", "_320");
         document.getElementById("qthree").target = "_self";
         document.getElementById("qthree").download = songname + ".mp3";
     }
