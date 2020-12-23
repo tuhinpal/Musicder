@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Stream with Lyrics or Download your Favourite Musics for free without any Ads" />
+    <meta name="keywords" content="Music, Musicder, JavaScript , Download Free Music, Stream Music Online, Lyrics , Music API" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/img/t-logo.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css?family=Krona+One|Gayathri|Poppins|Catamaran" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@900&display=swap" rel="stylesheet" />
+    <title>Musicder | Listen or Download Music For Free</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177605755-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-177605755-2');
+    </script>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+</body>
+<script>
+    window.addEventListener('keydown', function(e) {
+        if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) {
+            if (e.target.nodeName == 'INPUT' && e.target.type == 'text') {
+                e.preventDefault();
+                return false;
+            }
+        }
+    }, true);
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+</html>
+<!--Made by Tuhin Kanti Pal-->

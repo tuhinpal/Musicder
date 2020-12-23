@@ -1,0 +1,594 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    height: 100%;
+}
+
+.heading {
+    color: #067f8f;
+    font-family: Krona One;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.playline {
+    margin-top: -2px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.headingbelow {
+    color: #60a6af;
+    font-family: Krona One;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 10px;
+}
+
+.headingtwo {
+    color: #067f8f;
+    font-family: Krona One;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 10px;
+}
+
+.parag {
+    color: #067f8f;
+    font-family: Krona One;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 9px;
+}
+
+.paragone {
+    color: #ffffff;
+    font-family: Krona One;
+    font-size: 10px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.atextdec {
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.songcontent {
+    text-align: center;
+    padding-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activityb {
+    box-shadow: 0px 5px 14px -7px#10375c;
+    background: linear-gradient(to bottom, #067f8f 5%, #10375c 100%);
+    background-color: #067f8f;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Krona One;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 13px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #67818a;
+    margin-bottom: 25px;
+}
+
+.activityb:hover {
+    background: linear-gradient(to bottom, #07213a 5%, #067f8f 100%);
+    background-color: #067f8f;
+}
+
+.activityb:active {
+    position: relative;
+    top: 0px;
+}
+
+.footerdiv {
+    background-color: #171616;
+}
+
+.backwhite {
+    padding-top: 29px;
+    background-color: #ffffff;
+}
+
+.backblack {
+    padding-top: 29px;
+    padding-bottom: 5px;
+    background-color: #171616;
+}
+
+.errres {
+    background-color: #171616;
+}
+
+.songimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    margin-bottom: 30px;
+}
+
+.pageload {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 99;
+}
+
+.mainerr {
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.errres {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #171616;
+}
+
+.errtxt {
+    color: #ffffff;
+    font-family: Krona One;
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.formdivt {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: Krona One;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 15px
+}
+
+.formdivt form {
+    width: 100%;
+    max-width: 750px;
+    padding-top: 20px;
+}
+
+.formdivt form .inner-form {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .15);
+    border-radius: 34px;
+    overflow: hidden;
+    margin-bottom: 30px
+}
+
+.formdivt form .inner-form .input-field {
+    height: 68px
+}
+
+.formdivt form .inner-form .input-field input {
+    height: 100%;
+    background: 0 0;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #000
+}
+
+.formdivt form .inner-form .input-field input.placeholder {
+    color: #222;
+    font-size: 14px
+}
+
+.formdivt form .inner-form .input-field input:-moz-placeholder {
+    color: #222;
+    font-size: 14px;
+    font-family: Poppins
+}
+
+.formdivt form .inner-form .input-field input::-webkit-input-placeholder {
+    color: #8fa38a;
+    font-size: 13px
+}
+
+.formdivt form .inner-form .input-field input:focus,
+.formdivt form .inner-form .input-field input:hover {
+    box-shadow: none;
+    outline: 0
+}
+
+.formdivt form .inner-form .input-field.first-wrap {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fceee3
+}
+
+.formdivt form .inner-form .input-field.first-wrap input {
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+.formdivt form .inner-form .input-field.first-wrap .svg-wrapper {
+    min-width: 80px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.formdivt form .inner-form .input-field.first-wrap svg {
+    width: 36px;
+    height: 36px;
+    fill: #222
+}
+
+.formdivt form .inner-form .input-field.second-wrap {
+    min-width: 214px
+}
+
+.formdivt form .inner-form .input-field.second-wrap .btn-search {
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-family: Krona One;
+    position: relative;
+    z-index: 0;
+    background: #067f8f;
+    transition: all .2s ease-out, color .2s ease-out;
+    font-weight: 300
+}
+
+.formdivt form .inner-form .input-field.second-wrap .btn-search:hover {
+    background: #067f8f
+}
+
+.formdivt form .inner-form .input-field.second-wrap .btn-search:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+@media screen and (max-width:992px) {
+    .formdivt form .inner-form .input-field {
+        height: 50px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .formdivt form .inner-form .input-field.first-wrap .svg-wrapper {
+        min-width: 40px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 10px
+    }
+    .formdivt form .inner-form .input-field.first-wrap svg {
+        width: 26px;
+        height: 26px;
+        fill: #222
+    }
+    .formdivt form .inner-form .input-field.second-wrap {
+        min-width: 100px
+    }
+    .formdivt form .inner-form .input-field.second-wrap .btn-search {
+        font-size: 13px
+    }
+}
+
+.playcontent {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    width: 340px;
+    background: #8ee0eb;
+    border-radius: 12px;
+}
+
+.playlyricsdiv {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 340px;
+    background: #8ee0eb;
+    border-radius: 12px;
+}
+
+.playfooter {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 340px;
+    background: #ffffff;
+    border-radius: 0px;
+}
+
+.playhead {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 340px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 0px;
+}
+
+.playimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+}
+
+.playsongname {
+    color: #1C1C1C;
+    font-family: Krona One;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+}
+
+.playsongby {
+    color: #1C1C1C;
+    font-family: Krona One;
+    font-size: 8px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.playsong {
+    background: #8ee0eb;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 20px;
+    font-family: Krona One;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.playlyricsinit {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    transform: translate(0, 5.5px);
+    width: 70px;
+    height: 25px;
+    background: #037888;
+    border-radius: 25px;
+}
+
+.playlyricsask {
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+    font-family: Krona One;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0px, 7px);
+}
+
+.playlyrics {
+    color: #fdfbfb;
+    font-family: Catamaran;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.playlyricsheading {
+    color: #fdfbfb;
+    font-family: Krona One;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.playloading {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.playlogo {
+    color: #1c1c1c;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+    transform: translate(0px, 10px);
+}
+
+.playparagone {
+    color: #1C1C1C;
+    font-family: Krona One;
+    font-size: 10px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.playcenter {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.errsc {
+    margin-top: 5px;
+}
+
+.playheadplay {
+    color: #1C1C1C;
+    font-family: Poppins;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.playlogobtn {
+    transform: translate(286px, -71px);
+}
+
+.playpageload {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 99;
+}
+
+.dldheading {
+    color: #067f8f;
+    font-family: Krona One;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 20px;
+    transform: translate(0px, 25px);
+}
+
+.dldfooter {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+    width: 340px;
+    background: #ffffff;
+    border-radius: 0px;
+}
+
+.dldquality {
+    color: #067f8f;
+    font-family: Krona One;
+    font-size: 12px;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.dldactivityb {
+    box-shadow: 0px 5px 14px -7px#10375c;
+    background: linear-gradient(to bottom, #067f8f 5%, #10375c 100%);
+    background-color: #067f8f;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    width: 150px;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 13px 15px;
+    color: #ffffff;
+    font-family: Krona One;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #67818a;
+}
+
+.dldactivityb:hover {
+    background: linear-gradient(to bottom, #07213a 5%, #067f8f 100%);
+    background-color: #067f8f;
+}
+
+.dldactivityb:active {
+    position: relative;
+    top: 0px;
+}
+
+.dldloading {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.dldpageload {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 99;
+}
