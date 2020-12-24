@@ -31,7 +31,7 @@
 <code>https://github.com/cachecleanerjeet/musicder-native</code>
 
 ### Read This :
-*This is not the full source code which is used in <code>musicder.net</code>. Use <code>musicder.net</code> to download songs with metadata.*<br>
+*This is not the full source code which is used in <code>https://musicder.net</code>. Use <code>https://musicder.net</code> to download songs with metadata.*<br>
 
 ### Features :
 *1. Free.*<br>
