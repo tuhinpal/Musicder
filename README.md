@@ -30,13 +30,15 @@
 *This project has been swifted to React. Old musicder will be available here 👇*<br>
 <code>https://github.com/cachecleanerjeet/musicder-native</code>
 
+### Read This :
+*This is not the full source code which is used in <code>musicder.net</code>. Use <code>musicder.net</code> to download songs with metadata.*<br>
+
 ### Features :
 *1. Free.*<br>
 *2. Fast.* <br>
 *3. Easy to Use.*<br>
 *4. Streaming support with Lyrics.* <br>
 *5. One click Download.*<br>
-*6. Download with Metadata and Image.*<br>
 *8. PWA.*<br>
 <br>
 

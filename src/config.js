@@ -1,6 +1,5 @@
 // Replace these urls with your own deployment [don't give the last slash]
 
 module.exports = {
-    API_URL: 'https://jiosaavn-api.vercel.app',
-    TAGWRITER_URL: 'https://tagwriter.musicder.net'
+    API_URL: 'https://jiosaavn-api.vercel.app'
 }

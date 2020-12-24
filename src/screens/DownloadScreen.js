@@ -7,48 +7,8 @@ export default class PlayScreen extends React.Component {
     
     state = {
         song: [],
-        onesixzero: [],
         qOne: [],
         qTwo: []
-    }
-
-    oszHandler = this.oszHandler.bind(this)
-
-    oszHandler() {
-        this.setState({
-            onesixzero: <div className="errres">
-                <div className="mainerr">
-                    <p className="errtxt">
-                        Please wait while adding metadata into your song
-                    </p>
-                </div>
-            </div>
-        })
-        axios.get(`${config.TAGWRITER_URL}/id3?name=${this.state.song.song}&cover_url=${this.state.song.image}&song_url=${this.state.song.other_qualities[1].url}&album=${this.state.song.album}&year=${this.state.song.year}&artist=${this.state.song.singers}&quality=medium`)
-            .then(res => {
-                var url = res.data.url;
-                this.setState({
-                    onesixzero: <div className="errres">
-                        <div className="mainerr">
-                            <p className="errtxt">
-                                Your song is Ready
-                        </p>
-                            <a href={url} className="activityb errsc">Download</a>
-                        </div>
-                    </div>
-                })
-            })
-            .catch(err => {
-                this.setState({
-                    onesixzero: <div className="errres">
-                        <div className="mainerr">
-                            <p className="errtxt">
-                                Sorry there was a problem to write metadata into your song. Try again later!
-                            </p>
-                        </div>
-                    </div>
-                })
-            })
     }
 
     componentDidMount() {
@@ -98,11 +58,8 @@ export default class PlayScreen extends React.Component {
                         <a href={this.state.qOne} className="dldactivityb">96 Kbps</a><br />
                         <a href={this.state.song.media_url} className="dldactivityb">128 Kbps</a><br />
                         <a href={this.state.qTwo} className="dldactivityb">320 Kbps</a><br />
-                        <p onClick={this.oszHandler} className="dldactivityb">Download with<br />Metadata</p><br />
 
                     </div>
-
-                    {this.state.onesixzero}
 
                     <div className="dldfooter">
                         <h1 className="playlogo">MUSICDER</h1>
